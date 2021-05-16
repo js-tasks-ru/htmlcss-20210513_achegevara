@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(185, 184, 184);
+    font-size: 1.2em;
+}
+
+header {
+    width: 100vw;
+}
+
+header h1 {
+    background-color: black;
+    text-align: center;
+    font-size: 3em;
+    padding: 5px;
+    margin: 0px;
+}
+
+nav {
+    background-color: rgba(100, 99, 99, 0.829);
+    text-align: center;
+    font-size: 1.5em;
+    width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 14px;
+    margin: 0px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+main {
+    min-height:100%;
+}
+
+article {
+    background-color: darkslategray;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 3em;
+    width: 100vw;
+}
+
+a {
+    color: white;
+}
