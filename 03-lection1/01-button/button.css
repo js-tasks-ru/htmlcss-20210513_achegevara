@@ -1,1 +1,115 @@
 /* Стилизация кнопки */
+.button {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+text-align: center;
+color: var(--white);
+border-radius: 8px;
+border: none;
+}
+
+.button_primary-default {
+position: absolute;
+width: 189px;
+height: 48px;
+left: 643px;
+top: 139px;
+background: #4263EB;
+}
+
+.button_secondary-default {
+position: absolute;
+width: 189px;
+height: 48px;
+left: 865px;
+top: 139px;
+background: var(--purple);
+}
+
+.button_alternate-default {
+position: absolute;
+width: 189px;
+height: 48px;
+left: 1086px;
+top: 139px;
+background: var(--white);
+color: var(--grey-4);
+border: 1px solid var(--grey-3);
+box-sizing: border-box;
+}
+
+.button_content-primary {
+position: absolute;
+left: 35.14%;
+right: 34.7%;
+top: 31.25%;
+bottom: 29.17%;
+}
+
+.button_content-secondary {
+position: absolute;
+left: 29.65%;
+right: 30.14%;
+top: 31.25%;
+bottom: 29.17%;
+}
+
+.button_content-alternate {
+position: absolute;
+left: 32.4%;
+right: 32.68%;
+top: 31.25%;
+bottom: 29.17%;
+
+color: var(--grey-4);
+}
+
+.button_primary-default_disabled {
+top: 267px;
+opacity: 0.5;
+}
+
+.button_secondary-default_disabled {
+top: 267px;
+opacity: 0.5;
+}
+
+.button_alternate-default_disabled {
+top: 267px;
+opacity: 0.3;
+}
+
+.button_content-primary_disabled {
+opacity: 0.5;
+}
+
+.button_content-secondary_disabled {
+opacity: 0.5;
+}
+
+.button_content-alternate_disabled {
+
+}
+
+.button_primary-default:hover:not(.button_primary-default_disabled), 
+.button_primary-default:active:not(.button_primary-default_disabled), 
+.button_primary-default:focus:not(.button_primary-default_disabled) {
+background: #2342C0;
+}
+
+.button_secondary-default:hover:not(.button_secondary-default_disabled), 
+.button_secondary-default:active:not(.button_secondary-default_disabled), 
+.button_secondary-default:focus:not(.button_secondary-default_disabled) {
+background: #5028C6;
+}
+
+.button_alternate-default:hover:not(.button_alternate-default_disabled), 
+.button_alternate-default:active:not(.button_alternate-default_disabled), 
+.button_alternate-default:focus:not(.button_alternate-default_disabled) {
+border: 1px solid #212429;
+box-sizing: border-box;
+}
