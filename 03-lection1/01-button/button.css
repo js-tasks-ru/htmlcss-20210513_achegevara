@@ -91,10 +91,6 @@ opacity: 0.5;
 opacity: 0.5;
 }
 
-.button_content-alternate_disabled {
-
-}
-
 .button_primary-default:hover:not(.button_primary-default_disabled), 
 .button_primary-default:active:not(.button_primary-default_disabled), 
 .button_primary-default:focus:not(.button_primary-default_disabled) {
