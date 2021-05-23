@@ -6,7 +6,6 @@ height: 304px;
 }
 
 .accordion__item {
-width: 732px;
 position: relative;
 font-style: normal;
 font-weight: normal;
@@ -38,11 +37,11 @@ outline: none;
 }
 
 .accordion__summary:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 [open]>.accordion__summary {
-    padding-bottom: 0px;
+padding-bottom: 0px;
 }
 
 .accordion__content {
