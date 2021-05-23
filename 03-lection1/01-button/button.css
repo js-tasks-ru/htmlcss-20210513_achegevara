@@ -1,10 +1,4 @@
 /* Стилизация кнопки */
-.container {
-width: 700px;
-display: flex;
-flex-wrap: wrap;
-}
-
 .button {
 font-family: Roboto;
 font-style: normal;
@@ -16,8 +10,6 @@ text-align: center;
 color: var(--white);
 border-radius: 8px;
 border: none;
-
-margin: 10px;
 }
 
 .button_primary {
@@ -44,34 +36,7 @@ box-sizing: border-box;
 transition: opacity 200ms ease-in-out, border-color 200ms ease-in-out;
 }
 
-.button_content-primary {
-left: 35.14%;
-right: 34.7%;
-top: 31.25%;
-bottom: 29.17%;
-}
-
-.button_content-secondary {
-left: 29.65%;
-right: 30.14%;
-top: 31.25%;
-bottom: 29.17%;
-}
-
-.button_content-alternate {
-left: 32.4%;
-right: 32.68%;
-top: 31.25%;
-bottom: 29.17%;
-
-color: var(--grey-4);
-}
-
-.button_primary_disabled {
-opacity: 0.5;
-}
-
-.button_secondary_disabled {
+.button_disabled {
 opacity: 0.5;
 }
 
@@ -79,24 +44,16 @@ opacity: 0.5;
 opacity: 0.3;
 }
 
-.button_content-primary_disabled {
-opacity: 0.5;
-}
-
-.button_content-secondary_disabled {
-opacity: 0.5;
-}
-
-.button_primary:hover:not(.button_primary_disabled), 
-.button_primary:active:not(.button_primary_disabled), 
-.button_primary:focus:not(.button_primary_disabled) {
+.button_primary:hover:not(.button_disabled), 
+.button_primary:active:not(.button_disabled), 
+.button_primary:focus:not(.button_disabled) {
 background: #2342C0;
 cursor: pointer;
 }
 
-.button_secondary:hover:not(.button_secondary_disabled), 
-.button_secondary:active:not(.button_secondary_disabled), 
-.button_secondary:focus:not(.button_secondary_disabled) {
+.button_secondary:hover:not(.button_disabled), 
+.button_secondary:active:not(.button_disabled), 
+.button_secondary:focus:not(.button_disabled) {
 background: #5028C6;
 cursor: pointer;
 }
