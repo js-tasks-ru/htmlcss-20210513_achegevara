@@ -4,22 +4,10 @@ background-color: white;
 }
 
 .header__heading {
-position: absolute;
-width: 670px;
-height: 64px;
-left: 160px;
-top: 96px;
-
-/* h1 */
-
 font-style: normal;
 font-weight: 500;
 font-size: 50px;
 line-height: 64px;
-/* identical to box height, or 128% */
-
-
-/* Black */
 
 color: #212429;
 font-family: 'Inter', sans-serif;
