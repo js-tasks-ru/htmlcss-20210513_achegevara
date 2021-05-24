@@ -1,0 +1,32 @@
+.preview-flex__container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 0 -15px;
+}
+
+.preview-flex {
+background: #F9FAFC;
+padding: 68px 0 204px;
+}
+
+.preview-flex__card {
+height: 367px;
+background: var(--white);
+box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+border-radius: 12px;
+margin: 15px;
+flex-basis: 350px;
+display: flex;
+justify-content: center;
+}
+
+.preview-flex__title {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+color: var(--black);
+padding: 312px 0 30px;
+}
