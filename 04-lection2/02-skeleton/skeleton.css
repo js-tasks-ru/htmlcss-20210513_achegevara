@@ -1,32 +1,30 @@
-.container {
-width: min-content;
-}
-
 .skeleton {
 background: var(--white);
 border: 1px solid var(--grey-3);
 box-sizing: border-box;
 border-radius: 8px;
+padding: 24px 40px 32px 24px;
+max-width: 515px;
+min-width: min-content;
 }
 
 .skeleton__content {
-margin: 24px 40px 32px 24px;
 display: flex;
 flex-wrap: wrap;
 }
 
-.skeleton__ellipse {
+.skeleton__circle {
 width: 64px;
 height: 64px;
 background: var(--grey-2);
 border-radius: 50%;
 }
 
-.skeleton__not-full-lines-container {
+.skeleton__lines-container {
 display: flex;
 flex-direction: column;
 margin-left: 16px;
-width: 257px;
+width: 50%;
 }
 
 .skeleton__full-lines-container {
@@ -34,7 +32,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 margin-top: 16px;
-width: 515px;
+width: 100%;
 }
 
 .skeleton__line-short {
