@@ -4,5 +4,12 @@ overflow-x:hidden;
 
 .page__box {
 max-width: 1110px;
-margin: 0 auto;
+min-width: 220px;
+margin: 0 11.5%;
+}
+
+@media all and (max-width:375px) {
+.page__box {
+margin: 0 -16px;
+}
 }
