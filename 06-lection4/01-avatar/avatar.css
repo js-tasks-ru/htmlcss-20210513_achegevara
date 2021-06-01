@@ -1,4 +1,4 @@
-html {
+:root {
 --small-size-avatar-height: 64px;
 --small-size-avatar-width: 64px;
 
@@ -9,22 +9,22 @@ html {
 --large-size-avatar-width: 128px;
 }
 
-.avatar-container_small {
+.avatar_small {
 height: var(--small-size-avatar-height);
 width: var(--small-size-avatar-width);
 }
 
-.avatar-container_medium {
+.avatar_medium {
 height: var(--medium-size-avatar-height);
 width: var(--medium-size-avatar-width);
 }
 
-.avatar-container_large {
+.avatar_large {
 height: var(--large-size-avatar-height);
 width: var(--large-size-avatar-width);
 }
 
-.avatar {
+.avatar__img {
 border-radius: 50%;
 object-fit: fill;
 width: 100%;
