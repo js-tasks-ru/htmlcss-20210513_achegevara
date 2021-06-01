@@ -13,7 +13,7 @@ margin: 12px 8px 0;
 
 .preview-flex {
 background: #F9FAFC;
-padding: 68px 0 204px;
+padding: 55px 0 189px;
 }
 
 @media all and (max-width:767px) {
@@ -27,7 +27,7 @@ height: 367px;
 background: var(--white);
 box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 border-radius: 12px;
-margin: 12px 8px 12px 8px;
+margin: 15px;
 flex-basis: 350px;
 display: flex;
 justify-content: center;
@@ -38,6 +38,7 @@ justify-content: center;
 height: 210px;
 flex-basis: 164px;
 flex-wrap: wrap;
+margin: 12px 8px;
 }
 }
 
