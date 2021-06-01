@@ -1,0 +1,9 @@
+.menu {
+width: 229px;
+}
+
+@media all and (max-width:767px) {
+.menu {
+display: none;
+}
+}

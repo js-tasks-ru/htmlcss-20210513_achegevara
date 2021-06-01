@@ -8,7 +8,7 @@ min-width: 220px;
 margin: 0 11.5%;
 }
 
-@media all and (max-width:375px) {
+@media all and (max-width:767px) {
 .page__box {
 margin: 0 -16px;
 }
