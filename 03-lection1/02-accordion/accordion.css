@@ -1,8 +1,9 @@
 /* Стилизация аккордеона */
 .accordion {
 box-sizing: border-box;
-width: 730px;
 height: 304px;
+width: 100%;
+min-width: 220px;
 }
 
 .accordion__item {
@@ -40,7 +41,7 @@ outline: none;
 cursor: pointer;
 }
 
-[open]>.accordion__summary {
+.accordion__item[open]>.accordion__summary {
 padding-bottom: 0px;
 }
 
@@ -51,4 +52,17 @@ padding-bottom: 32px;
 padding-left: 32px;
 padding-right: 48.69px;
 color: var(--grey-4);
+}
+
+.accordion__arrow {
+width: 26px;
+height: 26px;
+color: var(--grey-4);
+position: absolute;
+top: 24px;
+right: 24px;
+}
+
+.accordion__item[open] .accordion__arrow {
+transform: rotate(-180deg);
 }
