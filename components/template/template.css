@@ -1,12 +1,12 @@
-@import "/components/header/header.css";
-@import "/components/template/footer/footer.css";
-@import "/components/template/header/header.css";
-@import "/components/template/header/nav/nav.css";
-@import "/components/template/main/main.css";
-@import "/components/template/main/menu/menu.css";
-@import "/components/template/main/component/component.css";
-@import "/components/template/page/page.css";
-@import "/04-lection2/01-histogram/histogram.css";
+@import "../header/header.css";
+@import "../template/footer/footer.css";
+@import "../template/header/header.css";
+@import "../template/header/nav/nav.css";
+@import "../template/main/main.css";
+@import "../template/main/menu/menu.css";
+@import "../template/main/component/component.css";
+@import "../template/page/page.css";
+@import "../../04-lection2/01-histogram/histogram.css";
 
 html, body {
 height: 100%;
