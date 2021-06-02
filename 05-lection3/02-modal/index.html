@@ -5,8 +5,32 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
+        <style>
+            html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            }
+        </style>
     </head>
     <body>
+        <button class="button button_primary" id="modal-open">
+            <span>Open modal</span>
+        </button>
+        <div class="modalka" id="modal">
+            <div class="modalka__background"></div>
+            <div class="modalka__area">
+                <div class="modalka__title">Modal title</div>
+                <svg class="cross" id="modal-close" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
+                </svg>   
+                <div class="modalka__content">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
