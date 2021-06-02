@@ -1,8 +1,8 @@
 /* Стилизация аккордеона */
 .accordion {
 box-sizing: border-box;
-width: 80%;
 height: 304px;
+width: 100%;
 min-width: 220px;
 }
 
@@ -41,7 +41,7 @@ outline: none;
 cursor: pointer;
 }
 
-[open]>.accordion__summary {
+.accordion__item[open]>.accordion__summary {
 padding-bottom: 0px;
 }
 
@@ -63,6 +63,6 @@ top: 24px;
 right: 24px;
 }
 
-[open] .accordion__arrow {
+.accordion__item[open] .accordion__arrow {
 transform: rotate(-180deg);
 }
