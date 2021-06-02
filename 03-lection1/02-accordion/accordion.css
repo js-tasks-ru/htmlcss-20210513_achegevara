@@ -34,6 +34,7 @@ padding-bottom: 24px;
 padding-left: 32px;
 color: var(--black);
 outline: none;
+/* width: 80%; */
 }
 
 .accordion__summary:hover {
@@ -51,4 +52,14 @@ padding-bottom: 32px;
 padding-left: 32px;
 padding-right: 48.69px;
 color: var(--grey-4);
+}
+
+.accordion__arrow {
+width: 26px;
+height: 26px;
+color: var(--grey-4);
+/* transform: rotate(-180deg); */
+position: absolute;
+top: 32px;
+right: 32px;
 }
