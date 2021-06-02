@@ -4,5 +4,6 @@ overflow-x:hidden;
 
 .page__box {
 max-width: 1110px;
+min-width: 220px;
 margin: 0 auto;
 }

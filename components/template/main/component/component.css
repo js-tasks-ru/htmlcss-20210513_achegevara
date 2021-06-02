@@ -1,0 +1,29 @@
+.component {
+background: var(--white);
+box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+border-radius: 12px;
+}
+
+@media all and (max-width:767px) {
+.component {
+margin: 0px;
+box-shadow: none;
+width: 100%;
+padding: 0 16px;
+}
+}
+
+.component__title-mobile {
+display: none;
+}
+
+@media all and (max-width: 767px) {
+.component__title-mobile {
+display: flex;
+justify-content: flex-start;
+padding: 32px 0 20px 0px;
+font-size: 20px;
+line-height: 26px;
+color: var(--grey-4);
+}
+}

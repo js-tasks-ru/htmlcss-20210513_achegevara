@@ -1,6 +1,13 @@
 .header {
-margin: 24px 0 77px;
 background-color: var(--white);
+padding-top: 24px;
+}
+
+@media all and (max-width:767px) {
+.header {
+padding: 16px 8px 69px 0px;
+margin: 0 16px;
+}
 }
 
 .header__heading {
@@ -14,8 +21,27 @@ color: var(--black);
 font-family: 'Inter', sans-serif;
 }
 
+@media all and (max-width:767px) {
+.header__heading {
+font-size: 28px;
+line-height: 38px;
+font-weight: 400;
+padding: 48px 8px 0px 16px;
+color: var(--grey-4);
+margin: 0;
+}
+}
+
 .header__container {
 display: flex;
 justify-content: space-between;
 align-items: center;
+}
+
+@media all and (max-width:767px) {
+.header__container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
 }

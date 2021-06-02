@@ -1,0 +1,14 @@
+.page {
+background: #F9FAFC;
+height: 100%;
+display: grid;
+grid-template-rows: auto 1fr auto;
+width: 100%;
+min-width: 220px;
+}
+
+.page__box {
+max-width: 1110px;
+min-width: 220px;
+margin: 0 11.5%;
+}
