@@ -54,7 +54,7 @@ color: var(--grey-4);
 padding: 14px 40px 33px 40px;
 }
 
-.cross {
+.modalka__cross {
 width: 24px;
 height: 24px;
 position: absolute;
