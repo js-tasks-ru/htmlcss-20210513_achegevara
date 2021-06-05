@@ -1,0 +1,89 @@
+.toggler__input {
+width: 0;
+height: 0;
+opacity: 0;
+pointer-events: none;
+outline: none;
+position: absolute;
+}
+
+.toggler__state {
+display: flex;
+align-items: center;
+cursor: pointer;
+margin: 10px;
+}
+
+.toggler__control-outer {
+width: 52px;
+height: 28px;
+background: var(--white);
+border: 1px solid var(--grey-2);
+box-sizing: border-box;
+border-radius: 16px;
+position: relative;
+}
+
+.toggler__control-inner {
+width: 24px;
+height: 24px;
+background: var(--grey-2);
+border-radius: 16px;
+position: absolute;
+top: 50%;
+left: 25%;
+transform: translate(-50%, -50%);
+}
+
+.toggler__legend {
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--grey-4);
+margin-left: 12px;
+}
+
+.toggler__legend_on {
+display: none;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control-outer {
+border: 1px solid #4263EB;
+background: #4263EB;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control-inner {
+background: var(--white);
+left: 75%;
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__legend {
+text-decoration: underline;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control-outer {
+background: var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control-inner {
+background: var(--grey-3);
+opacity: 0.25;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__legend {
+color: var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__state {
+cursor: default;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__legend_on {
+display: block;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__legend_off {
+display: none;
+}
