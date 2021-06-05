@@ -1,0 +1,75 @@
+.radio__input {
+width: 0;
+height: 0;
+opacity: 0;
+pointer-events: none;
+outline: none;
+position: absolute;
+}
+
+.radio__state {
+display: flex;
+align-items: center;
+cursor: pointer;
+margin: 10px;
+}
+
+.radio__control { 
+width: 28px;
+height: 28px;
+background: var(--white);
+border: 1px solid var(--grey-2);
+box-sizing: border-box;
+border-radius: 14px;
+position: relative;
+}
+
+.radio__legend {
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--grey-4);
+margin-left: 12px;
+}
+
+.radio__input:checked ~ .radio__state .radio__control-outer {
+border: 2px solid #4263EB;
+box-sizing: border-box;
+border-radius: 14px;
+width: 28px;
+height: 28px;
+position: relative;
+}
+
+.radio__input:checked ~ .radio__state .radio__control-inner {
+background: #4263EB;
+border-radius: 14px;
+width: 18px;
+height: 18px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.radio__input:checked ~ .radio__state .radio__icon {
+display: block;
+}
+
+.radio__input:focus ~ .radio__state .radio__legend {
+text-decoration: underline;
+}
+
+.radio__input:disabled ~ .radio__state .radio__control {
+background: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state .radio__legend {
+color: var(--grey-2);
+}
+
+.radio__input:disabled ~ .radio__state {
+cursor: default;
+}
