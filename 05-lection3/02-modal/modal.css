@@ -1,12 +1,3 @@
-@import "../../03-lection1/01-button/button.css";
-
-.button {
-position: absolute;
-top: 50%;
-left: 15%;
-transform: translate(-50%, -50%);
-}
-
 .modalka {
 width: 100%;
 height: 100%;
@@ -23,6 +14,8 @@ opacity: 0.5;
 .modalka__area {
 width: 428px;
 height: 294px;
+padding: 30px 40px 33px 40px;
+box-sizing: border-box;
 background: var(--white);
 border-radius: 8px;
 position: absolute;
@@ -40,8 +33,6 @@ line-height: 24px;
 display: flex;
 align-items: flex-end;
 color: #334D6E;
-padding-top: 30px;
-padding-left: 40px;
 }
 
 .modalka__content {
@@ -51,7 +42,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 24px;
 color: var(--grey-4);
-padding: 14px 40px 33px 40px;
+padding-top: 14px;
 }
 
 .modalka__cross {

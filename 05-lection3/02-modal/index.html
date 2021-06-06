@@ -4,12 +4,19 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
         <style>
             html, body {
             height: 100%;
             width: 100%;
             margin: 0;
+            }
+            .button {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%, -50%);
             }
         </style>
     </head>
@@ -20,10 +27,12 @@
         <div class="modalka" id="modal">
             <div class="modalka__background"></div>
             <div class="modalka__area">
-                <div class="modalka__title">Modal title</div>
-                <svg class="modalka__cross" id="modal-close">
-                    <use xlink:href="../../assets/images/sprite.svg#cross"></use>
-                </svg> 
+                
+                    <div class="modalka__title">Modal title</div>
+                    <svg class="modalka__cross" id="modal-close">
+                        <use xlink:href="../../assets/images/sprite.svg#cross"></use>
+                    </svg> 
+               
                 <div class="modalka__content">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
