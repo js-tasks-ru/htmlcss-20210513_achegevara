@@ -11,7 +11,7 @@ position: absolute;
 display: flex;
 align-items: center;
 cursor: pointer;
-margin: 10px;
+margin: 16px 0;
 }
 
 .radio__control { 
@@ -34,17 +34,12 @@ color: var(--grey-4);
 margin-left: 12px;
 }
 
-.radio__input:checked ~ .radio__state .radio__control-outer {
-border: 2px solid #4263EB;
-box-sizing: border-box;
-border-radius: 14px;
-width: 28px;
-height: 28px;
-position: relative;
+.radio__input:checked ~ .radio__state .radio__control {
+border: 2px solid var(--blue);
 }
 
-.radio__input:checked ~ .radio__state .radio__control-inner {
-background: #4263EB;
+.radio__input:checked ~ .radio__state .radio__control .radio__icon {
+background: var(--blue);
 border-radius: 14px;
 width: 18px;
 height: 18px;
