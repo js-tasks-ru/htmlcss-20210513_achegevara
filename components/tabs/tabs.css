@@ -50,67 +50,43 @@ outline: none;
 position: absolute;
 }
 
-.tabs__state {
+.tabs__label {
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-}
-
-.tabs__text {
 font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-display: flex;
-align-items: center;
 color: var(--grey-3);
 white-space: nowrap;
+
+border-bottom: 5px solid var(--white);
+padding-bottom: 8px;
 }
 
-.tabs__underline {
-background: var(--white);
-flex: none;
-align-self: stretch;
-flex-grow: 0;
-margin-top: 8px;
-height: 5px;
-}
-
-.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__state .tabs__underline {
-background: var(--black);
-}
-
-.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__state .tabs__underline {
-background: var(--black);
-}
-
-
-.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__state .tabs__underline {
-background: var(--black);
-}
-
-.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__state .tabs__underline {
-background: var(--black);
-}
-
-.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__state .tabs__text {
+.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__label {
 color: var(--black);
+border-bottom: 5px solid var(--black);
 }
 
-.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__state .tabs__text {
+.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__label {
 color: var(--black);
+border-bottom: 5px solid var(--black);
 }
 
-.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__state .tabs__text {
+.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__label {
 color: var(--black);
+border-bottom: 5px solid var(--black);
 }
 
-.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__state .tabs__text {
+.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__label {
 color: var(--black);
+border-bottom: 5px solid var(--black);
 }
 
-.tabs__input:focus ~ .tabs .tabs__state .tabs__text {
+.tabs__input:focus ~ .tabs .tabs__label {
 text-decoration: underline;
 }
