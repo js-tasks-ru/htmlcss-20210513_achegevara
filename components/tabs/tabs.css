@@ -1,4 +1,12 @@
 .tabs {
+background: var(--white);
+border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__items-wrapper {
+max-width: 1110px;
+min-width: 220px;
+margin: 0 auto;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -7,12 +15,13 @@ overflow: auto;
 }
 
 @media all and (max-width:767px) {
-.tabs::-webkit-scrollbar {
+.tabs__items-wrapper::-webkit-scrollbar {
 height: 0px;
 width: 0px;
 background: transparent;
 }
-.tabs { 
+.tabs__items-wrapper {
+margin-left: 16px; 
 scrollbar-width: none;
 }
 }
@@ -69,14 +78,39 @@ margin-top: 8px;
 height: 5px;
 }
 
-.tabs__input:checked ~ .tabs__state .tabs__underline {
+.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__state .tabs__underline {
 background: var(--black);
 }
 
-.tabs__input:checked ~ .tabs__state .tabs__text {
+.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__state .tabs__underline {
+background: var(--black);
+}
+
+
+.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__state .tabs__underline {
+background: var(--black);
+}
+
+.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__state .tabs__underline {
+background: var(--black);
+}
+
+.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__state .tabs__text {
 color: var(--black);
 }
 
-.tabs__input:focus ~ .tabs__state .tabs__text {
+.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__state .tabs__text {
+color: var(--black);
+}
+
+.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__state .tabs__text {
+color: var(--black);
+}
+
+.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__state .tabs__text {
+color: var(--black);
+}
+
+.tabs__input:focus ~ .tabs .tabs__state .tabs__text {
 text-decoration: underline;
 }

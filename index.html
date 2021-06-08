@@ -32,41 +32,48 @@
                 <div class="page__box">
                     <h1 class="header__heading">Reusable component library</h1>
                 </div>
-                <div class="page__box">
-                    <div class="tabs">
-                    <label class="tabs__item">
-                        <input type="radio" name="tabs" class="tabs__input" checked>
+                </div>
+            </header>
+            <main class="main">
+                
+                <input type="radio" id="all-tabs" name="tabs" class="tabs__input tabs__input_all" checked>
+                <input type="radio" id="atoms" name="tabs" class="tabs__input tabs__input_atoms">
+                <input type="radio" id="molecules" name="tabs" class="tabs__input tabs__input_molecules">
+                <input type="radio" id="organisms" name="tabs" class="tabs__input tabs__input_organisms">
+
+                <nav class="tabs">
+                    <div class="tabs__items-wrapper">
+                    <label for="all-tabs" class="tabs__item tabs__item_all">
+
                         <div class="tabs__state">
                             <div class="tabs__text">All components</div>
                             <div class="tabs__underline"></div>
                         </div>
                     </label>
-                    <label class="tabs__item">
-                        <input type="radio" name="tabs" class="tabs__input">
+                    <label for="atoms" class="tabs__item tabs__item_atoms">
+                        
                         <div class="tabs__state">
-                            <div class="tabs__text">Elements</div>
+                            <div class="tabs__text">Atoms</div>
                             <div class="tabs__underline"></div>
                         </div>
                     </label>
-                    <label class="tabs__item">
-                        <input type="radio" name="tabs" class="tabs__input">
+                    <label for="molecules" class="tabs__item tabs__item_molecules">
+                        
                         <div class="tabs__state">
-                            <div class="tabs__text">Containers</div>
+                            <div class="tabs__text">Molecules</div>
                             <div class="tabs__underline"></div>
                         </div>
                     </label>
-                    <label class="tabs__item">
-                        <input type="radio" name="tabs" class="tabs__input">
+                    <label for="organisms" class="tabs__item tabs__item_organisms">
+                        
                         <div class="tabs__state">
-                            <div class="tabs__text">Templates</div>
+                            <div class="tabs__text">Organisms</div>
                             <div class="tabs__underline"></div>
                         </div>
                     </label>
                 </div>
-                </div>
-                </div>
-            </header>
-            <main class="main">
+                </nav>
+                
                 <div class="preview-flex">
                     <div class="page__box">
                         <div class="preview-flex__container">
