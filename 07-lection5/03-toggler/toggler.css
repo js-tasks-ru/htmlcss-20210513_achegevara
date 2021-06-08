@@ -14,7 +14,7 @@ cursor: pointer;
 margin: 10px;
 }
 
-.toggler__control-outer {
+.toggler__control {
 width: 52px;
 height: 28px;
 background: var(--white);
@@ -45,13 +45,17 @@ color: var(--grey-4);
 margin-left: 12px;
 }
 
-.toggler__legend_on {
-display: none;
+.toggler__legend::after {
+content: "Off";
 }
 
-.toggler__input:checked ~ .toggler__state .toggler__control-outer {
-border: 1px solid #4263EB;
-background: #4263EB;
+.toggler__input:disabled ~ .toggler__state .toggler__legend::after {
+content: "Disabled";
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control {
+border: 1px solid var(--blue);
+background: var(--blue);
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control-inner {
@@ -63,7 +67,7 @@ left: 75%;
 text-decoration: underline;
 }
 
-.toggler__input:disabled ~ .toggler__state .toggler__control-outer {
+.toggler__input:disabled ~ .toggler__state .toggler__control {
 background: var(--grey-2);
 }
 
@@ -80,10 +84,6 @@ color: var(--grey-2);
 cursor: default;
 }
 
-.toggler__input:checked ~ .toggler__state .toggler__legend_on {
-display: block;
-}
-
-.toggler__input:checked ~ .toggler__state .toggler__legend_off {
-display: none;
+.toggler__input:checked ~ .toggler__state .toggler__legend::after {
+content: "On";
 }
