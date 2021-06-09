@@ -8,6 +8,10 @@ height: 24px;
 width: 24px;
 }
 
+.tooltip_preview {
+margin-top: 50px;
+}
+
 .tooltip__help {
 width: 129px;
 height: 45px;

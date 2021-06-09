@@ -7,6 +7,7 @@ width: 100%;
 max-width: 304px;
 padding: 28px 26px 40px 26px;
 min-width: 230px;
+height: 100%;
 }
 
 .calendar__title {
@@ -58,7 +59,7 @@ padding-bottom: 24px;
 
 .calendar__item_active {
 color: var(--white);
-background: #4263EB;
+background: var(--blue);
 }
 
 .calendar__item_between-active {

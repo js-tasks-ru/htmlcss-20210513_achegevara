@@ -6,6 +6,7 @@ padding: 32px 25px;
 box-sizing: border-box;
 display: flex;
 flex-direction: column;
+display: none;
 }
 
 .card__content {
@@ -14,6 +15,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+}
+
+.card__checkbox-container, .card__radio-container {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr;
 }
 
 .card__legend {

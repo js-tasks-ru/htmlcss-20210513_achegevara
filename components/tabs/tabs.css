@@ -90,3 +90,19 @@ border-bottom: 5px solid var(--black);
 .tabs__input:focus ~ .tabs .tabs__label {
 text-decoration: underline;
 }
+
+.tabs__input_all:checked ~ .preview-flex .card {
+display: flex;
+}
+
+.tabs__input_atoms:checked ~ .preview-flex .atom {
+display: flex;
+}
+
+.tabs__input_molecules:checked ~ .preview-flex .molecule {
+display: flex;
+}
+
+.tabs__input_organisms:checked ~ .preview-flex .organism {
+display: flex;
+}
