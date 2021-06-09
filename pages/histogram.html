@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component page</title>
+    <title>Histogram</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../components/template/template.css">
-    <link rel="stylesheet" href="../components/tabs/tabs.css">
 </head>
 <body>
     <div class="page">
@@ -29,20 +28,9 @@
             </div>
         </header>
         <div class="main">
-            <div class="menu">
-                <div class="menu__header">Components</div>
-                <nav class="menu__body">
-                    <a class="menu__item">Tooltip</a>
-                    <a class="menu__item">Custom form elements</a>
-                    <a class="menu__item">Calendar</a>
-                    <a class="menu__item">Modal dialog</a>
-                    <a class="menu__item">Histogram</a>
-                    <a class="menu__item">Avatar</a>
-                </nav>
-            </div>
+            <div class="menu"></div>
             <div class="component">
-                <div class="component__title">Histogram</div>
-                <div class="component__body">
+                <div class="component__title-mobile">Histogram</div>
                 <div class="histogram">
                     <div class="histogram__header">
                         <p class="histogram__title">Total orders</p>
@@ -82,30 +70,6 @@
                         <div class="histogram__bar" style="height: 80%;"></div>
                     </div>
                 </div>
-            </div>
-            <div class="component__code">
-                    <input type="radio" id="all-tabs" name="tabs" class="tabs__input tabs__input_all" checked>
-                    <input type="radio" id="atoms" name="tabs" class="tabs__input tabs__input_atoms">
-                    <input type="radio" id="molecules" name="tabs" class="tabs__input tabs__input_molecules">
-                    <input type="radio" id="organisms" name="tabs" class="tabs__input tabs__input_organisms">
-    
-                    <nav class="tabs">
-                        <div class="tabs__items-wrapper">
-                        <label for="all-tabs" class="tabs__item tabs__item_all">
-                            <div class="tabs__label">HTML</div>
-                        </label>
-                        <label for="atoms" class="tabs__item tabs__item_atoms">
-                            <div class="tabs__label">CSS</div>
-                        </label>
-                    </div>
-                    </nav>
-                    <div class="tabs__content-html">
-                        <pre><code></code></pre>
-                    </div>
-                    <div class="tabs__content-css">
-                        <pre><code></code></pre>
-                    </div>
-            </div>
             </div>
         </div>
         <div class="footer">Reusable component library</div>

@@ -23,10 +23,6 @@ grid-template-columns: 1fr;
 grid-template-rows: 1fr 1fr 1fr;
 }
 
-.card__legend {
-
-}
-
 .card__title {
 font-family: Roboto;
 font-style: normal;
