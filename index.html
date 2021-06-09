@@ -11,6 +11,15 @@
         <link rel="stylesheet" href="./components/preview-flex/preview-flex.css">
         <link rel="stylesheet" href="./components/footer/footer.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
+        <link rel="stylesheet" href="./components/card/card.css">
+        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+        <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+        <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+        <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
+        <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+        
     </head>
     <body>
         <div class="page">
@@ -61,12 +70,260 @@
                 <div class="preview-flex">
                     <div class="page__box">
                         <div class="preview-flex__container">
-                            <div class="preview-flex__card"><div class="preview-flex__content"></div><span class="preview-flex__title">Tooltip</span></div>
-                            <div class="preview-flex__card"><div class="preview-flex__content"></div><span class="preview-flex__title">Custom form elements</span></div>
-                            <div class="preview-flex__card"><div class="preview-flex__content"></div><span class="preview-flex__title">Calendar</span></div>
-                            <div class="preview-flex__card"><div class="preview-flex__content"></div><span class="preview-flex__title">Modal dialog</span></div>
-                            <div class="preview-flex__card"><div class="preview-flex__content"></div><span class="preview-flex__title">Histogram</span></div>
-                            <div class="preview-flex__card"><div class="preview-flex__content"></div><span class="preview-flex__title">Avatar</span></div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    <div class="histogram">
+                                        <div class="histogram__header">
+                                            <p class="histogram__title">Total orders</p>
+                                            <a href="#" class="histogram__link">View all</a>
+                                        </div>
+                                        <div class="histogram__total">50399</div>
+                                        <div class="histogram__bars">
+                                            <div class="histogram__bar" style="height: 10%;"></div>
+                                            <div class="histogram__bar" style="height: 30%;"></div>
+                                            <div class="histogram__bar" style="height: 20%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 40%;"></div>
+                                            <div class="histogram__bar" style="height: 100%;"></div>
+                                            <div class="histogram__bar" style="height: 80%;"></div>
+                                            <div class="histogram__bar" style="height: 60%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 30%;"></div>
+                                            <div class="histogram__bar" style="height: 40%;"></div>
+                                            <div class="histogram__bar" style="height: 60%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 85%;"></div>
+                                            <div class="histogram__bar" style="height: 45%;"></div>
+                                            <div class="histogram__bar" style="height: 20%;"></div>
+                                            <div class="histogram__bar" style="height: 35%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 15%;"></div>
+                                            <div class="histogram__bar" style="height: 10%;"></div>
+                                            <div class="histogram__bar" style="height: 30%;"></div>
+                                            <div class="histogram__bar" style="height: 45%;"></div>
+                                            <div class="histogram__bar" style="height: 65%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 90%;"></div>
+                                            <div class="histogram__bar" style="height: 45%;"></div>
+                                            <div class="histogram__bar" style="height: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Histogramm</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    
+                                        <button class="button button_primary button_preview">
+                                            <span>Primary</span>
+                                        </button>
+                                        <button class="button button_secondary button_preview">
+                                            <span>Secondary</span>
+                                        </button>
+                                        <button class="button button_alternate button_preview">
+                                            <span>Alternate</span>
+                                        </button>
+                                    
+                                    
+                                        <button class="button button_primary button_disabled button_preview">
+                                            <span>Primary</span>
+                                        </button>
+                                        <button class="button button_secondary button_disabled button_preview">
+                                            <span>Secondary</span>
+                                        </button>
+                                        <button class="button button_alternate button_alternate_disabled button_preview">
+                                            <span>Alternate</span>
+                                        </button>
+                                    
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Button</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    <div class="accordion">
+                                        <details class="accordion__item" open>
+                                            <summary class="accordion__summary">
+                                                Accordion
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                                Accordions (from 19th-century German Akkordeon, from Akkord—"musical chord, 
+                                                concord of sounds") are a family of box-shaped musical instruments of the 
+                                                bellows-driven free-reed aerophone type, colloquially referred to as a squeezebox.
+                                            </p>
+                                        </details>
+                                        
+                                        <details class="accordion__item">
+                                            <summary class="accordion__summary">
+                                                Bayan
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                                The bayan (Russian: бая́н, IPA: [bɐˈjan]) is a type of chromatic 
+                                                button accordion developed in Russia in the early 20th century and 
+                                                named after the 11th-century bard Boyan.
+                                            </p>
+                                        </details>
+                                        
+                                        <details class="accordion__item">
+                                            <summary class="accordion__summary">
+                                                Harmonica
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                                The harmonica, also known as a French harp or mouth organ, is a free 
+                                                reed wind instrument used worldwide in many musical genres, notably in blues, 
+                                                American folk music, classical music, jazz, country, and rock.
+                                            </p>
+                                        </details>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Accordion</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    <div class="skeleton">
+                                        <div class="skeleton__content">
+                                            <div class="skeleton__circle"></div>
+                                            <div class="skeleton__lines-container">
+                                                <div class="skeleton__line-short"></div>
+                                                <div class="skeleton__line-mid"></div>
+                                            </div>
+                                            <div class="skeleton__full-lines-container">
+                                                <div class="skeleton__line-long"></div>
+                                                <div class="skeleton__line-long"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Skeleton</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    <div class="tooltip tooltip_preview">
+                                        <svg class="tooltip__trigger">
+                                            <use xlink:href="./assets/images/sprite.svg#questionmark"></use>
+                                        </svg>   
+                                    <div class="tooltip__help tooltip__help_preview">
+                                        <div class="tooltip__text">Helper Text</div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Tooltip</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    <div class="calendar">
+                                        <div class="calendar__title">October 2019</div>
+                                        <div class="calendar__wrapper">
+                                            <div class="calendar__inner">
+                                                <span class="calendar__item calendar__item_day">Mon</span>
+                                                <span class="calendar__item calendar__item_day">Tue</span>
+                                                <span class="calendar__item calendar__item_day">Wed</span>
+                                                <span class="calendar__item calendar__item_day">Thu</span>
+                                                <span class="calendar__item calendar__item_day">Fri</span>
+                                                <span class="calendar__item calendar__item_day">Sat</span>
+                                                <span class="calendar__item calendar__item_day">Sun</span>
+                                                <span class="calendar__item"></span>
+                                                <span class="calendar__item"></span>
+                                                <span class="calendar__item"></span>
+                                                <span class="calendar__item"></span>
+                                                <span class="calendar__item"></span>
+                                                <span class="calendar__item">1</span>
+                                                <span class="calendar__item">2</span>
+                                                <span class="calendar__item">3</span>
+                                                <span class="calendar__item">4</span>
+                                                <span class="calendar__item">5</span>
+                                                <span class="calendar__item">6</span>
+                                                <span class="calendar__item">7</span>
+                                                <span class="calendar__item">8</span>
+                                                <span class="calendar__item">9</span>
+                                                <span class="calendar__item">10</span>
+                                                <span class="calendar__item calendar__item_active">11</span>
+                                                <span class="calendar__item calendar__item_between-active">12</span>
+                                                <span class="calendar__item calendar__item_between-active">13</span>
+                                                <span class="calendar__item calendar__item_between-active">14</span>
+                                                <span class="calendar__item calendar__item_active">15</span>
+                                                <span class="calendar__item">16</span>
+                                                <span class="calendar__item">17</span>
+                                                <span class="calendar__item">18</span>
+                                                <span class="calendar__item">19</span>
+                                                <span class="calendar__item">20</span>
+                                                <span class="calendar__item">21</span>
+                                                <span class="calendar__item">22</span>
+                                                <span class="calendar__item">23</span>
+                                                <span class="calendar__item">24</span>
+                                                <span class="calendar__item">25</span>
+                                                <span class="calendar__item">26</span>
+                                                <span class="calendar__item">27</span>
+                                                <span class="calendar__item">28</span>
+                                                <span class="calendar__item">29</span>
+                                                <span class="calendar__item">30</span>
+                                                <span class="calendar__item">31</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Calendar</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    <div class="avatar">
+                                        <div class="avatar_medium">
+                                            <img class="avatar__img" src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Avatar</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+                                    
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Title</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="preview-flex__card card">
+                                <div class="card__content">
+
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Title</div>
+                                    <div class="card__subtitle">Subtitle</div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

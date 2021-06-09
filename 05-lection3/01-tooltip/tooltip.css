@@ -21,6 +21,12 @@ transform: translate(-50%, -50%);
 display: none;
 }
 
+.tooltip__help_preview {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .tooltip__text {
 font-family: 'Inter', sans-serif;
 font-style: normal;
