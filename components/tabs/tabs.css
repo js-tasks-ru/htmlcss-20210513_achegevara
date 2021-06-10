@@ -14,6 +14,21 @@ padding: 0px;
 overflow: auto;
 }
 
+.tabs__items-wrapper_component-page {
+margin: 0 48px;
+}
+
+.tabs__content-html, .tabs__content-css {
+padding: 0 48px;
+display: none;
+}
+
+@media all and (max-width:767px) {
+.tabs__content-html, .tabs__content-css {
+padding: 0 16px;
+}
+}
+
 @media all and (max-width:767px) {
 .tabs__items-wrapper::-webkit-scrollbar {
 height: 0px;
@@ -106,3 +121,23 @@ display: flex;
 .tabs__input_organisms:checked ~ .preview-flex .organism {
 display: flex;
 }
+
+.tabs__input_html:checked ~ .tabs .tabs__item_html .tabs__label {
+color: var(--black);
+border-bottom: 5px solid var(--black);
+}
+
+.tabs__input_css:checked ~ .tabs .tabs__item_css .tabs__label {
+color: var(--black);
+border-bottom: 5px solid var(--black);
+}
+
+.tabs__input_html:checked ~ .tabs__content-html {
+display: flex;
+}
+
+.tabs__input_css:checked ~ .tabs__content-css {
+display: flex;
+}
+
+

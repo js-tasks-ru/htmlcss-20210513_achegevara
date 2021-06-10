@@ -56,3 +56,15 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+.tooltip_component-page {
+position: relative;
+left: 52px;
+top: 23px;
+}
+
+@media all and (max-width: 767px) {
+.tooltip_component-page {
+top: 46px;
+}
+}

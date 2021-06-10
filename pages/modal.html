@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal dialog</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/template/template.css">
+    <link rel="stylesheet" href="../components/tabs/tabs.css">
+    <link rel="stylesheet" href="../07-lection5/04-input/input.css">
+    <link rel="stylesheet" href="../03-lection1/01-button/button.css">
+    <link rel="stylesheet" href="../05-lection3/02-modal/modal.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header header_template">
+            <div class="page__box header__container">
+                <div class="header__logo">
+                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="1" width="30" height="30" fill="#212429"/>
+                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                    </svg>    
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav__item">Components</a>
+                    <a href="#" class="nav__item">About</a>
+                    <a href="#" class="nav__item">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="main">
+            <div class="menu">
+                <div class="menu__header">Components</div>
+                <nav class="menu__body">
+                    <a href="#" class="menu__item">Tooltip</a>
+                    <a href="#" class="menu__item">Custom form elements</a>
+                    <a href="#" class="menu__item">Calendar</a>
+                    <a href="#" class="menu__item">Modal dialog</a>
+                    <a href="#" class="menu__item">Histogram</a>
+                    <a href="#" class="menu__item">Avatar</a>
+                </nav>
+            </div>
+            <div class="component">
+                <div class="component__title">Modal dialog</div>
+                <div class="component__body">
+                    <button class="button button_primary" id="modal-open">
+                        <span>Open modal</span>
+                    </button>
+                    <div class="modalka" id="modal">
+                        <div class="modalka__background"></div>
+                        <div class="modalka__area">
+                            
+                                <div class="modalka__title"></div>
+                                <svg class="modalka__cross" id="modal-close">
+                                    <use xlink:href="../../assets/images/sprite.svg#cross"></use>
+                                </svg> 
+                           
+                            <div class="modalka__content">
+                                <div class="input modalka__input">
+                                    <label class="input__label-as-wrapper">
+                                        <div class="input__label-text">Name</div>
+                                        <div class="input__field-container">
+                                            <input type="text" class="input__field" placeholder="Placeholder">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="input modalka__input">
+                                    <label class="input__label-as-wrapper">
+                                        <div class="input__label-text">Email</div>
+                                        <div class="input__field-container">
+                                            <input type="text" class="input__field" placeholder="Placeholder">
+                                        </div>
+                                    </label>
+                                </div>
+                                <button class="button button_primary modalka__button">
+                                    <span>Submit</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component__code">
+                    <input type="radio" id="html-tab" name="tabs" class="tabs__input tabs__input_html" checked>
+                    <input type="radio" id="css-tab" name="tabs" class="tabs__input tabs__input_css">
+
+                    <nav class="tabs">
+                        <div class="tabs__items-wrapper tabs__items-wrapper_component-page">
+                        <label for="html-tab" class="tabs__item tabs__item_html">
+                            <div class="tabs__label">HTML</div>
+                        </label>
+                        <label for="css-tab" class="tabs__item tabs__item_css">
+                            <div class="tabs__label">CSS</div>
+                        </label>
+                    </div>
+                    </nav>
+                    <div class="tabs__content-html">
+                        <pre><code>
+&lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;
+&lt;span&gt;Open modal&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class=&quot;modalka&quot; id=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modalka__background&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;modalka__area&quot;&gt;
+        
+            &lt;div class=&quot;modalka__title&quot;&gt;&lt;/div&gt;
+            &lt;svg class=&quot;modalka__cross&quot; id=&quot;modal-close&quot;&gt;
+                &lt;use xlink:href=&quot;../../assets/images/sprite.svg#cross&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt; 
+       
+        &lt;div class=&quot;modalka__content&quot;&gt;
+            &lt;div class=&quot;input modalka__input&quot;&gt;
+                &lt;label class=&quot;input__label-as-wrapper&quot;&gt;
+                    &lt;div class=&quot;input__label-text&quot;&gt;Name&lt;/div&gt;
+                    &lt;div class=&quot;input__field-container&quot;&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;input__field&quot; placeholder=&quot;Placeholder&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;input modalka__input&quot;&gt;
+                &lt;label class=&quot;input__label-as-wrapper&quot;&gt;
+                    &lt;div class=&quot;input__label-text&quot;&gt;Email&lt;/div&gt;
+                    &lt;div class=&quot;input__field-container&quot;&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;input__field&quot; placeholder=&quot;Placeholder&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;button class=&quot;button button_primary modalka__button&quot;&gt;
+                &lt;span&gt;Submit&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    <div class="tabs__content-css">
+                        <pre><code>
+.modalka {
+width: 100%;
+height: 100%;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.modalka_preview {
+display: block;
+position: relative;
+min-height: 350px;
+min-width: 240px;
+}
+
+.modalka__background {
+width: 100%;
+height: 100%;
+background: #C4C4C4;
+opacity: 0.5;
+}
+
+.modalka__background_preview {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.modalka__area {
+padding: 16px 40px 40px 40px;
+box-sizing: border-box;
+background: var(--white);
+border-radius: 8px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.modalka__area_preview {
+position: relative;
+width: 80%;
+height: 80%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 8px 20px 20px 20px;
+}
+
+.modalka__title {
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: flex-end;
+color: #334D6E;
+}
+
+.modalka__content {
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--grey-4);
+width: 100%;
+height: 100%;
+min-width: 164px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.modalka__cross {
+width: 24px;
+height: 24px;
+position: absolute;
+top: 12px;
+right: 12px;
+cursor: pointer;
+}
+
+.modalka__input {
+margin-top: 16px;
+width: 100%;
+}
+
+.modalka__button {
+display: block;
+width: 52%;
+margin-top: 22px;
+}
+
+.modalka__input_preview {
+padding: 8px 0 6px 12px;
+height: 18%;
+}
+
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Reusable component library</div>
+    </div>
+</body>
+<script>
+    (function() {
+    const close = document.getElementById('modal-close');
+    const modal = document.getElementById('modal');
+    const modalOpen = document.getElementById('modal-open');
+
+    if (!close || !modalOpen || !modal) {
+        return;
+    }
+
+    modalOpen.addEventListener('click', () => {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+
+    close.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'initial';
+    });
+    })();
+</script>
+</html>
