@@ -59,6 +59,12 @@ grid-auto-flow: column;
 margin-bottom: 30px;
 }
 
+.component__body_inputs {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
 .component__code {
 margin-top: 64px;
 }
