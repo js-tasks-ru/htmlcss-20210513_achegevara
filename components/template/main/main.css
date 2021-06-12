@@ -10,5 +10,6 @@ justify-self: center;
 @media all and (max-width:767px) {
 .main {
 background: var(--white);
+grid-template-columns: 1fr;
 }
 }
