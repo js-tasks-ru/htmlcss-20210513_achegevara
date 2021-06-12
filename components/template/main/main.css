@@ -10,7 +10,5 @@ justify-self: center;
 @media all and (max-width:767px) {
 .main {
 background: var(--white);
-display: flex;
-justify-content: center;
 }
 }
