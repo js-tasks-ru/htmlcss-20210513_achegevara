@@ -21,6 +21,7 @@ margin: 0 48px;
 .tabs__content-html, .tabs__content-css {
 padding: 0 48px;
 display: none;
+overflow: auto;
 }
 
 @media all and (max-width:767px) {
@@ -139,5 +140,3 @@ display: flex;
 .tabs__input_css:checked ~ .tabs__content-css {
 display: flex;
 }
-
-
