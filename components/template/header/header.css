@@ -1,6 +1,6 @@
 .header_template {
 background-color: var(--grey-1);
-padding-bottom: 60px;
+padding: 24px 0px 60px 0px;
 }
 
 @media all and (max-width:767px) {

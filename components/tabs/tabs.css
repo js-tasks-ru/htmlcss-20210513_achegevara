@@ -10,7 +10,7 @@ margin: 0 auto;
 display: flex;
 flex-direction: row;
 align-items: center;
-padding: 0px;
+padding: 0px 16px;
 overflow: auto;
 }
 
@@ -37,7 +37,6 @@ width: 0px;
 background: transparent;
 }
 .tabs__items-wrapper {
-margin-left: 16px; 
 scrollbar-width: none;
 }
 }
