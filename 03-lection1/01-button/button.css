@@ -14,7 +14,7 @@ border: none;
 .button_primary {
 width: 189px;
 height: 48px;
-background: #4263EB;
+background: var(--blue);
 transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
@@ -60,7 +60,7 @@ cursor: pointer;
 .button_alternate:hover:not(.button_alternate_disabled), 
 .button_alternate:active:not(.button_alternate_disabled), 
 .button_alternate:focus:not(.button_alternate_disabled) {
-border: 1px solid #212429;
+border: 1px solid var(--black);
 box-sizing: border-box;
 cursor: pointer;
 }

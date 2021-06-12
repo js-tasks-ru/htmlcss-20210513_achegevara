@@ -12,7 +12,7 @@ margin: 12px 8px 0;
 }
 
 .preview-flex {
-background: #F9FAFC;
+background: var(--grey-1);
 padding: 53px 16px 189px 16px;
 }
 

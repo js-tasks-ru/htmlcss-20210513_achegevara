@@ -1,6 +1,5 @@
 .page {
-background: #F9FAFC;
-/* height: 100%; */
+background: var(--grey-1);
 display: grid;
 grid-template-rows: auto 1fr auto;
 width: 100%;
