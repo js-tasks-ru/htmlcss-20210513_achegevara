@@ -17,7 +17,7 @@
 <body>
     <div class="page">
         <header class="header header_template">
-            <div class="header__container container-template">
+            <div class="header__container page__box">
                 <a href="../index.html" class="header__logo">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="1" width="30" height="30" fill="#212429"/>
@@ -32,12 +32,12 @@
                 </nav>
             </div>
         </header>
-        <div class="main container-template">
+        <div class="main page__box">
             <div class="menu">
                 <div class="menu__header">Components</div>
                 <nav class="menu__body">
                     <a href="./tooltip.html" class="menu__item">Tooltip</a>
-                    <a href="./custom-form.html" class="menu__item active">Custom form elements</a>
+                    <a href="./custom-form.html" class="menu__item menu__item_active">Custom form elements</a>
                     <a href="./calendar.html" class="menu__item">Calendar</a>
                     <a href="./modal.html" class="menu__item">Modal dialog</a>
                     <a href="./histogram.html" class="menu__item">Histogram</a>
@@ -46,123 +46,123 @@
             </div>
             <div class="component">
                 <div class="component__title">Custom form elements</div>
-                <div class="component__body component__body_custom-form">
-                    <div class="component__body_checks">
-
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__input">
-                                <div class="checkbox__state">
-                                    <div class="checkbox__control">
-                                        <svg class="checkbox__icon">
-                                            <use xlink:href="../assets/images/sprite.svg#check"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="checkbox__legend">
-                                        Default
-                                    </div>
+                <div class="component__body">
+                    <div class="component__inner-wrapper">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <div class="checkbox__state">
+                                <div class="checkbox__control">
+                                    <svg class="checkbox__icon">
+                                        <use xlink:href="../assets/images/sprite.svg#check"></use>
+                                    </svg>
                                 </div>
-                            </label>
-                    
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__input" checked>
-                                <div class="checkbox__state">
-                                    <div class="checkbox__control">
-                                        <svg class="checkbox__icon">
-                                            <use xlink:href="../assets/images/sprite.svg#check"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="checkbox__legend">
-                                        Checked
-                                    </div>
+                                <div class="checkbox__legend">
+                                    Default
                                 </div>
-                            </label>
-                    
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__input" disabled>
-                                <div class="checkbox__state">
-                                    <div class="checkbox__control">
-                                        <svg class="checkbox__icon">
-                                            <use xlink:href="../assets/images/sprite.svg#check"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="checkbox__legend">
-                                        Disabled
-                                    </div>
+                            </div>
+                        </label>
+                
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" checked>
+                            <div class="checkbox__state">
+                                <div class="checkbox__control">
+                                    <svg class="checkbox__icon">
+                                        <use xlink:href="../assets/images/sprite.svg#check"></use>
+                                    </svg>
                                 </div>
-                            </label>
-
-
-                            <label class="radio">
-                                <input type="radio" name="radio-test" class="radio__input">
-                                <div class="radio__state">
-                                    <div class="radio__control">
-                                        <div class="radio__icon">
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="radio__legend">
-                                        Default
-                                    </div>
+                                <div class="checkbox__legend">
+                                    Checked
                                 </div>
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="other" class="radio__input" checked>
-                                <div class="radio__state">
-                                    <div class="radio__control">
-                                        <div class="radio__icon">
-                                    </div>
-                                    </div>
-                                    <div class="radio__legend">
-                                        Checked
-                                    </div>
+                            </div>
+                        </label>
+                
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" disabled>
+                            <div class="checkbox__state">
+                                <div class="checkbox__control">
+                                    <svg class="checkbox__icon">
+                                        <use xlink:href="../assets/images/sprite.svg#check"></use>
+                                    </svg>
                                 </div>
-                            </label>
-                    
-                            <label class="radio">
-                                <input type="radio" class="radio__input" disabled>
-                                <div class="radio__state">
-                                    <div class="radio__control">
-                                        <div class="radio__icon">
-                                    </div>
-                                    </div>
-                                    <div class="radio__legend">
-                                        Disabled
-                                    </div>
+                                <div class="checkbox__legend">
+                                    Disabled
                                 </div>
-                            </label>
-                            <label class="toggler">
-                                <input type="checkbox" class="toggler__input">
-                                <div class="toggler__state">
-                                    <div class="toggler__control">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="component__inner-wrapper">
+                        <label class="radio">
+                            <input type="radio" name="radio-test" class="radio__input">
+                            <div class="radio__state">
+                                <div class="radio__control">
+                                    <div class="radio__icon">
+                                    </div>
+                                    
+                                </div>
+                                <div class="radio__legend">
+                                    Default
+                                </div>
+                            </div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="other" class="radio__input" checked>
+                            <div class="radio__state">
+                                <div class="radio__control">
+                                    <div class="radio__icon">
+                                </div>
+                                </div>
+                                <div class="radio__legend">
+                                    Checked
+                                </div>
+                            </div>
+                        </label>
+                
+                        <label class="radio">
+                            <input type="radio" class="radio__input" disabled>
+                            <div class="radio__state">
+                                <div class="radio__control">
+                                    <div class="radio__icon">
+                                </div>
+                                </div>
+                                <div class="radio__legend">
+                                    Disabled
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="component__inner-wrapper">
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input">
+                            <div class="toggler__state">
+                                <div class="toggler__control">
+                                    <div class="toggler__control-inner"></div>
+                                </div>
+                                <div class="toggler__legend"></div>
+                            </div>
+                        </label>
+                
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input" checked>
+                            <div class="toggler__state">
+                                <div class="toggler__control">
                                         <div class="toggler__control-inner"></div>
-                                    </div>
-                                    <div class="toggler__legend"></div>
                                 </div>
-                            </label>
-                    
-                            <label class="toggler">
-                                <input type="checkbox" class="toggler__input" checked>
-                                <div class="toggler__state">
-                                    <div class="toggler__control">
-                                            <div class="toggler__control-inner"></div>
-                                    </div>
-                                    <div class="toggler__legend"></div>
+                                <div class="toggler__legend"></div>
+                            </div>
+                        </label>
+                
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__input" disabled>
+                            <div class="toggler__state">
+                                <div class="toggler__control">
+                                        <div class="toggler__control-inner"></div>
                                 </div>
-                            </label>
-                    
-                            <label class="toggler">
-                                <input type="checkbox" class="toggler__input" disabled>
-                                <div class="toggler__state">
-                                    <div class="toggler__control">
-                                            <div class="toggler__control-inner"></div>
-                                    </div>
-                                    <div class="toggler__legend"></div>
-                                </div>
-                            </label>
-                        </div>
-                    
-                    <div class="component__body_inputs">
-                        
+                                <div class="toggler__legend"></div>
+                            </div>
+                        </label>
+                    </div>
+                
+                    <div class="component__inner-wrapper">
                         <div class="input">
                             <label class="input__label-as-wrapper">
                                 <div class="input__label-text">Label</div>

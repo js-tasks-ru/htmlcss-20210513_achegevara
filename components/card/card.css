@@ -8,16 +8,17 @@ display: flex;
 flex-direction: column;
 display: none;
 position: relative;
+text-decoration: none;
 }
 
-.card__link {
+/* .card__link {
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
 z-index: 2;
-}
+} */
 
 .card__content {
 flex-grow: 1;
@@ -25,6 +26,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+pointer-events: none;
 }
 
 .card__checkbox-container, .card__radio-container {

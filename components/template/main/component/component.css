@@ -40,10 +40,7 @@ color: var(--grey-4);
 padding: 0 48px;
 display: flex;
 justify-content: flex-start;
-}
-
-.component__body_custom-form {
-display: block;
+flex-wrap: wrap;
 }
 
 @media all and (max-width: 767px) {
@@ -52,18 +49,11 @@ padding: 0px 16px;
 }
 }
 
-.component__body_checks {
-display: grid;
-grid-template-columns: repeat(3, auto);
-grid-template-rows: repeat(3, auto);
-grid-auto-flow: column;
-margin-bottom: 30px;
-}
-
-.component__body_inputs {
+.component__inner-wrapper {
 display: flex;
 flex-direction: column;
 gap: 20px;
+margin-bottom: 30px;
 }
 
 .component__code {
