@@ -71,11 +71,11 @@ line-height: 24px;
 color: var(--grey-4);
 }
 
-.burger-menu__components {
+.burger-menu__menu-wrapper {
 border-top: 1px solid var(--grey-2);
 }
 
-.burger-menu__components-header {
+.burger-menu__menu-title {
 font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -86,7 +86,7 @@ margin-top: 24px;
 margin-bottom: 8px;
 }
 
-.burger-menu__item {
+.burger-menu__menu-item {
 font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -97,19 +97,19 @@ margin: 8px 0px;
 text-decoration: none;
 }
 
-.burger-menu__item-main-page-link {
+.burger-menu__menu-link {
 margin-top: 64px;
 }
 
-.burger-menu__components-list {
+.burger-menu__menu {
 display: flex;
 flex-direction: column;
 }
 
-.menu__item.active {
+.burger-menu__menu-item_active {
 color: var(--red);
 }
 
-.menu__item:hover {
+.burger-menu__menu-item:hover {
 opacity: 0.8;
 }
