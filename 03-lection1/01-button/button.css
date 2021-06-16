@@ -69,3 +69,9 @@ cursor: pointer;
 width: 30%;
 margin: 5px;
 }
+
+.button_modalka {
+display: block;
+width: 52%;
+margin-top: 22px;
+}

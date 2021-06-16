@@ -83,18 +83,4 @@ right: 12px;
 cursor: pointer;
 }
 
-.modalka__input {
-margin-top: 16px;
-width: 100%;
-}
 
-.modalka__button {
-display: block;
-width: 52%;
-margin-top: 22px;
-}
-
-.modalka__input_preview {
-padding: 8px 0 6px 12px;
-height: 18%;
-}
