@@ -11,7 +11,7 @@ position: absolute;
 display: flex;
 align-items: center;
 cursor: pointer;
-margin: 10px;
+margin: 16px 21px;
 }
 
 .toggler__control {
