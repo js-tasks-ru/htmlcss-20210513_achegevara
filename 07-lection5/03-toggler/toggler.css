@@ -14,6 +14,10 @@ cursor: pointer;
 margin: 16px 21px;
 }
 
+.toggler__state_mode {
+margin: 0 12px;
+}
+
 .toggler__control {
 width: 52px;
 height: 28px;

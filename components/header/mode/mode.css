@@ -1,0 +1,12 @@
+.mode-switcher {
+display: flex;
+align-items: center;
+padding: 0px;
+margin-left: 24px;
+}
+
+@media all and (max-width:767px) {
+.mode-switcher {
+display: none;
+}
+}
