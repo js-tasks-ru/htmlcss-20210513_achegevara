@@ -8,10 +8,14 @@ height: 24px;
 width: 24px;
 }
 
+.tooltip_preview {
+margin-top: 50px;
+}
+
 .tooltip__help {
 width: 129px;
 height: 45px;
-background: #4263EB;
+background: var(--blue);
 box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 border-radius: 10px;
 position: absolute;
@@ -19,6 +23,12 @@ left: 50%;
 top: -100%;
 transform: translate(-50%, -50%);
 display: none;
+}
+
+.tooltip__help_preview {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .tooltip__text {
@@ -34,7 +44,7 @@ color: var(--grey-2);
 .tooltip__help::before {
 content: "";
 border: 7px solid transparent;
-border-top: 5px solid #4263EB;
+border-top: 5px solid var(--blue);
 position: absolute;
 left: 50%;
 transform: translate(-50%);
@@ -45,4 +55,16 @@ top: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+.tooltip_component-page {
+position: relative;
+left: 52px;
+top: 23px;
+}
+
+@media all and (max-width: 767px) {
+.tooltip_component-page {
+top: 46px;
+}
 }

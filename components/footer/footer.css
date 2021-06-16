@@ -1,5 +1,5 @@
 .footer {
-background: white;
+background: var(--white);
 text-align: center;
 max-width: 640px;
 margin: 0 auto;
@@ -11,7 +11,7 @@ font-weight: 500;
 font-size: 38px;
 line-height: 48px;
 
-color: #212429;
+color: var(--black);
 padding-top: 71px;
 font-family: 'Inter', sans-serif;
 }
@@ -22,7 +22,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 24px;
 
-color: #212429;
+color: var(--black);
 padding-top: 32px;
 padding-bottom: 136px;
 font-family: 'Inter', sans-serif;

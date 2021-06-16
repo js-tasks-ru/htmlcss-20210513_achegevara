@@ -1,7 +1,6 @@
 /* Стилизация аккордеона */
 .accordion {
 box-sizing: border-box;
-height: 304px;
 width: 100%;
 min-width: 220px;
 }
@@ -50,7 +49,7 @@ font-family: 'Inter', sans-serif;
 padding-top: 16px;
 padding-bottom: 32px;
 padding-left: 32px;
-padding-right: 48.69px;
+padding-right: 48px;
 color: var(--grey-4);
 }
 

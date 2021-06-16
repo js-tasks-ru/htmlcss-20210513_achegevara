@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component page</title>
+    <title>Avatar</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../components/template/template.css">
     <link rel="stylesheet" href="../components/tabs/tabs.css">
+    <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css">
 </head>
 <body>
     <div class="page">
@@ -37,49 +38,15 @@
                     <a href="./calendar.html" class="menu__item">Calendar</a>
                     <a href="./modal.html" class="menu__item">Modal dialog</a>
                     <a href="./histogram.html" class="menu__item">Histogram</a>
-                    <a href="./avatar.html" class="menu__item">Avatar</a>
+                    <a href="./avatar.html" class="menu__item menu__item_active">Avatar</a>
                 </nav>
             </div>
             <div class="component">
-                <div class="component__title">Histogram</div>
+                <div class="component__title">Avatar</div>
                 <div class="component__body">
-                    <div class="histogram">
-                        <div class="histogram__header">
-                            <p class="histogram__title">Total orders</p>
-                            <a href="#" class="histogram__link">View all</a>
-                        </div>
-                        <div class="histogram__total">50399</div>
-                        <div class="histogram__bars">
-                            <div class="histogram__bar" style="height: 10%;"></div>
-                            <div class="histogram__bar" style="height: 30%;"></div>
-                            <div class="histogram__bar" style="height: 20%;"></div>
-                            <div class="histogram__bar" style="height: 50%;"></div>
-                            <div class="histogram__bar" style="height: 40%;"></div>
-                            <div class="histogram__bar" style="height: 100%;"></div>
-                            <div class="histogram__bar" style="height: 80%;"></div>
-                            <div class="histogram__bar" style="height: 60%;"></div>
-                            <div class="histogram__bar" style="height: 70%;"></div>
-                            <div class="histogram__bar" style="height: 50%;"></div>
-                            <div class="histogram__bar" style="height: 50%;"></div>
-                            <div class="histogram__bar" style="height: 70%;"></div>
-                            <div class="histogram__bar" style="height: 30%;"></div>
-                            <div class="histogram__bar" style="height: 40%;"></div>
-                            <div class="histogram__bar" style="height: 60%;"></div>
-                            <div class="histogram__bar" style="height: 70%;"></div>
-                            <div class="histogram__bar" style="height: 85%;"></div>
-                            <div class="histogram__bar" style="height: 45%;"></div>
-                            <div class="histogram__bar" style="height: 20%;"></div>
-                            <div class="histogram__bar" style="height: 35%;"></div>
-                            <div class="histogram__bar" style="height: 50%;"></div>
-                            <div class="histogram__bar" style="height: 15%;"></div>
-                            <div class="histogram__bar" style="height: 10%;"></div>
-                            <div class="histogram__bar" style="height: 30%;"></div>
-                            <div class="histogram__bar" style="height: 45%;"></div>
-                            <div class="histogram__bar" style="height: 65%;"></div>
-                            <div class="histogram__bar" style="height: 70%;"></div>
-                            <div class="histogram__bar" style="height: 90%;"></div>
-                            <div class="histogram__bar" style="height: 45%;"></div>
-                            <div class="histogram__bar" style="height: 80%;"></div>
+                    <div class="avatar">
+                        <div class="avatar_large">
+                            <img class="avatar__img" src="../06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
                         </div>
                     </div>
                 </div>
@@ -98,10 +65,51 @@
                     </div>
                     </nav>
                     <div class="tabs__content-html">
-                        <pre><code></code></pre>
+                        <pre><code>
+&lt;div class=&quot;avatar&quot;&gt;
+    &lt;div class=&quot;avatar_large&quot;&gt;
+        &lt;img class=&quot;avatar__img&quot; 
+        src=&quot;../06-lection4/01-avatar/public/avatar-200.jpg&quot; 
+        alt=&quot;avatar&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
                     </div>
                     <div class="tabs__content-css">
-                        <pre><code></code></pre>
+                        <pre><code>
+.avatar {
+--small-size-avatar-height: 64px;
+--small-size-avatar-width: 64px;
+
+--medium-size-avatar-height: 102px;
+--medium-size-avatar-width: 102px;
+
+--large-size-avatar-height: 128px;
+--large-size-avatar-width: 128px;
+}
+
+.avatar_small {
+height: var(--small-size-avatar-height);
+width: var(--small-size-avatar-width);
+}
+
+.avatar_medium {
+height: var(--medium-size-avatar-height);
+width: var(--medium-size-avatar-width);
+}
+
+.avatar_large {
+height: var(--large-size-avatar-height);
+width: var(--large-size-avatar-width);
+}
+
+.avatar__img {
+border-radius: 50%;
+object-fit: fill;
+width: 100%;
+height: 100%;
+}                                
+                        </code></pre>
                     </div>
                 </div>
             </div>

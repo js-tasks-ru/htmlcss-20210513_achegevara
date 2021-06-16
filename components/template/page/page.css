@@ -1,14 +1,22 @@
 .page {
-background: #F9FAFC;
-height: 100%;
+background: var(--grey-1);
 display: grid;
 grid-template-rows: auto 1fr auto;
 width: 100%;
 min-width: 220px;
 }
 
+@media all and (max-width:767px) {
+.page {
+height: 100%;
+}
+}
+
 .page__box {
 max-width: 1110px;
 min-width: 220px;
-margin: 0 11.5%;
+padding: 0 16px;
+box-sizing: border-box;
+margin: 0 auto;
+background-color: var(--grey-1);
 }

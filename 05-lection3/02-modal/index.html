@@ -3,20 +3,15 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
         <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="../../07-lection5/04-input/input.css">
+        <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
         <style>
             html, body {
             height: 100%;
             width: 100%;
             margin: 0;
-            }
-            .button {
-            position: absolute;
-            top: 50%;
-            left: 15%;
-            transform: translate(-50%, -50%);
             }
         </style>
     </head>
@@ -28,14 +23,31 @@
             <div class="modalka__background"></div>
             <div class="modalka__area">
                 
-                    <div class="modalka__title">Modal title</div>
+                    <div class="modalka__title"></div>
                     <svg class="modalka__cross" id="modal-close">
                         <use xlink:href="../../assets/images/sprite.svg#cross"></use>
                     </svg> 
                
                 <div class="modalka__content">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    <div class="input input_modalka">
+                        <label class="input__label-as-wrapper">
+                            <div class="input__label-text">Name</div>
+                            <div class="input__field-container">
+                                <input type="text" class="input__field" placeholder="Placeholder">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input input_modalka">
+                        <label class="input__label-as-wrapper">
+                            <div class="input__label-text">Email</div>
+                            <div class="input__field-container">
+                                <input type="text" class="input__field" placeholder="Placeholder">
+                            </div>
+                        </label>
+                    </div>
+                    <button class="button button_primary button_modalka">
+                        <span>Submit</span>
+                    </button>
                 </div>
             </div>
         </div>
