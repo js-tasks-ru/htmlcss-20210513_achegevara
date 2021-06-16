@@ -102,10 +102,6 @@ color: var(--black);
 border-bottom: 5px solid var(--black);
 }
 
-.tabs__input:focus ~ .tabs .tabs__label {
-text-decoration: underline;
-}
-
 .tabs__input_all:checked ~ .preview-flex .card {
 display: flex;
 }
