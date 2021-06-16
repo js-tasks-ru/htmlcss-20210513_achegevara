@@ -24,7 +24,7 @@ align-items: center;
 position: relative;
 }
 
-.burger-button {
+.burger-menu__button {
 height: 24px;
 width: 24px;
 position: fixed;
@@ -32,7 +32,7 @@ top: 0;
 left: 0;
 }
 
-.burger-circle {
+.burger-menu__button-bg {
 width: 32px;
 height: 32px;
 background: var(--grey-2);
@@ -46,7 +46,7 @@ transform: translate(0, -50%);
 cursor: pointer;
 }
 
-.burger-menu-close {
+.burger-menu__close-button {
 position: relative;
 top: 50%;
 left: 50%;
