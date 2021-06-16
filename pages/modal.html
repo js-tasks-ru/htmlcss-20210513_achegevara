@@ -12,12 +12,59 @@
     <link rel="stylesheet" href="../07-lection5/04-input/input.css">
     <link rel="stylesheet" href="../03-lection1/01-button/button.css">
     <link rel="stylesheet" href="../05-lection3/02-modal/modal.css">
+    <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 <body>
     <div class="page">
         <header class="header header_template">
             <div class="header__container page__box">
+                <svg class="burger-menu__button" id="burger-menu-open">
+                    <use xlink:href="../../assets/images/sprite.svg#burger"></use>
+                </svg>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-menu__header">
+                        <div class="burger-menu__button-bg">
+                            <svg class="burger-menu__button burger-menu__close-button" id="burger-menu-close">
+                                <use xlink:href="../../assets/images/sprite.svg#cross"></use>
+                            </svg>
+                        </div>
+                        <svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="1" width="30" height="30" fill="#212429"/>
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                        </svg>
+                    </div>
+                    <div class="burger-menu__body">
+                        <div class="burger-menu__switcher">
+                            <div class="burger-menu__switcher-text">Dark mode</div>
+                            <div class="burger-menu__switcher-toggler">
+                                <label class="toggler">
+                                    <input type="checkbox" class="toggler__input">
+                                    <div class="toggler__state">
+                                        <div class="toggler__control">
+                                            <div class="toggler__control-inner"></div>
+                                        </div>
+                                        <div class="toggler__legend"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="burger-menu__menu-wrapper">
+                            <div class="burger-menu__menu-title">Components</div>
+                            <nav class="burger-menu__menu">
+                                <a href="./tooltip.html" class="burger-menu__menu-item">Tooltip</a>
+                                <a href="./custom-form.html" class="burger-menu__menu-item">Custom form elements</a>
+                                <a href="./calendar.html" class="burger-menu__menu-item">Calendar</a>
+                                <a href="./modal.html" class="burger-menu__menu-item burger-menu__menu-item_active">Modal dialog</a>
+                                <a href="./histogram.html" class="burger-menu__menu-item">Histogram</a>
+                                <a href="./avatar.html" class="burger-menu__menu-item">Avatar</a>
+                                <a href="../index.html" class="burger-menu__menu-item burger-menu__menu-link">Main page</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
                 <a href="../index.html" class="header__logo">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="1" width="30" height="30" fill="#212429"/>
