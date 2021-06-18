@@ -1,5 +1,5 @@
 .header {
-background-color: var(--white);
+background-color: var(--main-bg);
 padding: 24px 16px 0 16px;
 }
 
@@ -18,7 +18,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 50px;
 line-height: 64px;
-color: var(--black);
+color: var(--font-color);
 font-family: 'Inter', sans-serif;
 }
 
@@ -28,7 +28,7 @@ font-size: 28px;
 line-height: 38px;
 font-weight: 400;
 padding: 48px 0px 32px 0px;
-color: var(--grey-4);
+color: var(--font-color);
 margin: 0;
 }
 }
@@ -46,4 +46,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+}
+
+.header__logo {
+color: var(--dark-bg);
 }

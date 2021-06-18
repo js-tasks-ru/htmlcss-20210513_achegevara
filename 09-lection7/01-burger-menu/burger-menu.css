@@ -6,7 +6,7 @@ width: 100vw;
 height: 100vh;
 padding: 0 16px;
 box-sizing: border-box;
-background: var(--grey-1);
+background: var(--grey-bg);
 transform: translateX(-100vw);
 transition: transform 200ms ease-in-out;
 z-index: 2;
@@ -34,6 +34,7 @@ left: 0;
 top: 50%;
 transform: translate(0, -50%);
 cursor: pointer;
+color: var(--dark-bg);
 }
 
 @media all and (min-width:767px) {
@@ -78,7 +79,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-color: var(--grey-4);
+color: var(--font-color);
 }
 
 .burger-menu__menu-wrapper {
@@ -102,7 +103,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-color: var(--black);
+color: var(--font-color);
 margin: 8px 0px;
 text-decoration: none;
 }
