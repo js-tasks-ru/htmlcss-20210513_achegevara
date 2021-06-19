@@ -6,6 +6,7 @@ position: relative;
 cursor: pointer;
 height: 24px;
 width: 24px;
+color: var(--text-primary);
 }
 
 .tooltip_preview {

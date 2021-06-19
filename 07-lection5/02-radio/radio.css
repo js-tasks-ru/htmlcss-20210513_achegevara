@@ -17,7 +17,7 @@ margin: 16px 21px;
 .radio__control { 
 width: 28px;
 height: 28px;
-background: var(--white);
+background: var(--white-bg);
 border: 1px solid var(--grey-2);
 box-sizing: border-box;
 border-radius: 14px;
@@ -30,7 +30,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-color: var(--grey-4);
+color: var(--input-text);
 margin-left: 12px;
 }
 
@@ -58,11 +58,12 @@ text-decoration: underline;
 }
 
 .radio__input:disabled ~ .radio__state .radio__control {
-background: var(--grey-2);
+background: var(--input-placeholder);
+border: var(--input-placeholder);
 }
 
 .radio__input:disabled ~ .radio__state .radio__legend {
-color: var(--grey-2);
+color: var(--input-placeholder);
 }
 
 .radio__input:disabled ~ .radio__state {

@@ -5,7 +5,7 @@ position: relative;
 .input__field {
 height: 56px;
 width: 100%;
-background: var(--white);
+background: var(--white-bg);
 border: 1px solid var(--grey-2);
 box-sizing: border-box;
 border-radius: 8px;
@@ -13,7 +13,7 @@ font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
-color: var(--grey-4);
+color: var(--input-text);
 line-height: 26px;
 padding: 17px 0 13px 24px;
 outline: none;
@@ -21,7 +21,7 @@ appearance: none;
 }
 
 .input__field::placeholder {
-color: var(--grey-2);
+color: var(--input-placeholder);
 }
 
 .input__label-text {
@@ -39,10 +39,6 @@ padding-bottom: 5px;
 .input__field:focus {
 border: 1px solid var(--blue);
 box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
-}
-
-.input__field_success:focus {
-border: 1px solid var(--grey-2);
 }
 
 .input__icon {
