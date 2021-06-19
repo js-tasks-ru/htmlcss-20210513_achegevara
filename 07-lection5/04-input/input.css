@@ -13,7 +13,7 @@ font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
-color: var(--input-text);
+color: var(--text-dark);
 line-height: 26px;
 padding: 17px 0 13px 24px;
 outline: none;
@@ -21,7 +21,7 @@ appearance: none;
 }
 
 .input__field::placeholder {
-color: var(--input-placeholder);
+color: var(--text-light);
 }
 
 .input__label-text {

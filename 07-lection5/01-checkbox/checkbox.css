@@ -41,7 +41,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
-color: var(--input-text);
+color: var(--text-dark);
 margin-left: 12px;
 }
 
@@ -60,12 +60,12 @@ text-decoration: underline;
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
-background: var(--input-placeholder);
-border: var(--input-placeholder);
+background: var(--text-disabled);
+border: var(--text-disabled);
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__legend {
-color: var(--input-placeholder);
+color: var(--text-disabled);
 }
 
 .checkbox__input:disabled ~ .checkbox__state {

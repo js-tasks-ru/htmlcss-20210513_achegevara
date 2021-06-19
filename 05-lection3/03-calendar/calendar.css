@@ -1,5 +1,5 @@
 .calendar {
-background: var(--white);
+background: var(--white-bg);
 border: 1px solid var(--grey-3);
 box-sizing: border-box;
 border-radius: 8px;
@@ -17,7 +17,7 @@ font-weight: 600;
 font-size: 20px;
 line-height: 24px;
 text-align: center;
-color: var(--grey-4);
+color: var(--input-text-color);
 padding-bottom: 24px;
 }
 
@@ -42,7 +42,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 20px;
-color: var(--grey-4);
+color: var(--input-text-color);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -53,7 +53,7 @@ font-family: 'Inter', sans-serif;
 font-size: 14px;
 line-height: 20px;
 text-align: center;
-color: var(--grey-3);
+color: var(--text-secondary);
 padding-bottom: 24px;
 }
 
@@ -65,5 +65,5 @@ background: var(--blue);
 .calendar__item_between-active {
 background: var(--blue);
 opacity: 0.2;
-color: var(--black);
+color: var(--text-primary);
 }

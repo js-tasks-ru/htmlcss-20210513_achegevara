@@ -15,8 +15,10 @@
     --text-primary: var(--black);
     --text-secondary: var(--grey-3);
     --active-text-color: var(--text-primary);
-    --input-text: var(--grey-4);
-    --input-placeholder: var(--grey-2);
+    --text-dark: var(--grey-4);
+    --text-light: var(--grey-2);
+    --text-disabled: var(--grey-2);
+    --toggler-inner: var(--grey-3);
 
     --main-bg: var(--light-bg);
     --grey-bg: var(--grey-1);
@@ -55,8 +57,10 @@ html[data-theme-dark] {
     --text-primary: var(--white);
     --active-text-color: var(--grey-2);
     --input-text-color: var(--font-color);
-    --input-text: var(--grey-1);
-    --input-placeholder: var(--grey-4);
+    --text-dark: var(--grey-1);
+    --text-light: var(--grey-4);
+    --text-disabled: var(--grey-3);
+    --toggler-inner: var(--grey-4);
 }
 
 html[data-theme-dark] .toggler__input:checked ~ .toggler__state .toggler__control-inner {

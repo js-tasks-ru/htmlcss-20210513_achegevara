@@ -30,7 +30,7 @@ left: 0;
 .modalka__area {
 padding: 16px 40px 40px 40px;
 box-sizing: border-box;
-background: var(--white);
+background: var(--white-bg);
 border-radius: 8px;
 position: absolute;
 top: 50%;
@@ -81,6 +81,7 @@ position: absolute;
 top: 12px;
 right: 12px;
 cursor: pointer;
+color: var(--text-dark);
 }
 
 
