@@ -78,28 +78,24 @@ font-size: 16px;
 line-height: 24px;
 color: var(--grey-3);
 white-space: nowrap;
-border-bottom: 5px solid transparent;
-padding-bottom: 8px;
+transition: all 250ms;
 }
 
-.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__label {
-color: var(--active-text-color);
-border-bottom: 5px solid var(--active-text-color);
+.tabs__label:after {
+content: '';
+display: block;
+height: 5px;
+width: 100%;
+background-color: var(--dark-bg);
+transform: scaleX(0);
+transition: transform 250ms ease-in-out;
+margin-top: 5px;
 }
 
-.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__label {
-color: var(--active-text-color);
-border-bottom: 5px solid var(--active-text-color);
-}
-
-.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__label {
-color: var(--active-text-color);
-border-bottom: 5px solid var(--active-text-color);
-}
-
-.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__label {
-color: var(--active-text-color);
-border-bottom: 5px solid var(--active-text-color);
+.tabs > .tabs__items-wrapper .tabs__label:hover,
+.tabs > .tabs__items-wrapper .tabs__label:active,
+.tabs > .tabs__items-wrapper .tabs__label:focus {
+    color: var(--active-text-color);
 }
 
 .tabs__input_all:checked ~ .preview-flex .card {
@@ -118,14 +114,37 @@ display: flex;
 display: flex;
 }
 
+.tabs__input_all:checked ~ .tabs .tabs__items-wrapper .tabs__item_all .tabs__label:after,
+.tabs__input_atoms:checked ~ .tabs .tabs__items-wrapper .tabs__item_atoms .tabs__label:after,
+.tabs__input_molecules:checked ~ .tabs .tabs__items-wrapper .tabs__item_molecules .tabs__label:after,
+.tabs__input_organisms:checked ~ .tabs .tabs__items-wrapper .tabs__item_organisms .tabs__label:after,
+.tabs__input_all:hover ~ .tabs .tabs__items-wrapper .tabs__item_all .tabs__label:after,
+.tabs__input_atoms:hover ~ .tabs .tabs__items-wrapper .tabs__item_atoms .tabs__label:after,
+.tabs__input_molecules:hover ~ .tabs .tabs__items-wrapper .tabs__item_molecules .tabs__label:after,
+.tabs__input_organisms:hover ~ .tabs .tabs__items-wrapper .tabs__item_organisms .tabs__label:after {
+    transform: scaleX(1);
+}
+
+.tabs__input_all:checked ~ .tabs .tabs__items-wrapper .tabs__item_all .tabs__label,
+.tabs__input_atoms:checked ~ .tabs .tabs__items-wrapper .tabs__item_atoms .tabs__label,
+.tabs__input_molecules:checked ~ .tabs .tabs__items-wrapper .tabs__item_molecules .tabs__label,
+.tabs__input_organisms:checked ~ .tabs .tabs__items-wrapper .tabs__item_organisms .tabs__label {
+    color: var(--active-text-color);
+}
+
 .tabs__input_html:checked ~ .tabs .tabs__item_html .tabs__label {
 color: var(--active-text-color);
-border-bottom: 5px solid var(--active-text-color);
 }
 
 .tabs__input_css:checked ~ .tabs .tabs__item_css .tabs__label {
 color: var(--active-text-color);
-border-bottom: 5px solid var(--active-text-color);
+}
+
+.tabs__input_html:checked ~ .tabs .tabs__items-wrapper .tabs__item_html .tabs__label:after,
+.tabs__input_css:checked ~ .tabs .tabs__items-wrapper .tabs__item_css .tabs__label:after,
+.tabs__input_html:hover ~ .tabs .tabs__items-wrapper .tabs__item_html .tabs__label:after,
+.tabs__input_css:hover ~ .tabs .tabs__items-wrapper .tabs__item_css .tabs__label:after {
+    transform: scaleX(1);
 }
 
 .tabs__input_html:checked ~ .tabs__content-html {

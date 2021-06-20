@@ -37,6 +37,7 @@ position: absolute;
 top: 50%;
 left: 25%;
 transform: translate(-50%, -50%);
+transition: left 0.5s ease, background 0.5s ease;
 }
 
 .toggler__legend {
@@ -60,6 +61,7 @@ content: "Disabled";
 .toggler__input:checked ~ .toggler__state .toggler__control {
 border: 1px solid var(--blue);
 background: var(--blue);
+transition: background 0.5s ease;
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control-inner {
