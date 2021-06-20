@@ -136,88 +136,102 @@
                         </nav>
                     <div class="tabs__content-html">
 <pre><code>
-&lt;div class=&quot;tooltip tooltip_component-page&quot;&gt;
-&lt;svg class=&quot;tooltip__trigger&quot;&gt;
-    &lt;use xlink:href=&quot;../assets/images/sprite.svg#questionmark&quot;&gt;&lt;/use&gt;
-&lt;/svg&gt;   
-&lt;div class=&quot;tooltip__help&quot;&gt;
-    &lt;div class=&quot;tooltip__text&quot;&gt;Helper Text&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot;&gt;
+    &lt;svg class=&quot;tooltip__trigger&quot;&gt;
+        &lt;use xlink:href=&quot;../../assets/images/sprite.svg#questionmark&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;   
+    &lt;div class=&quot;tooltip__help&quot;&gt;
+        &lt;div class=&quot;tooltip__text&quot;&gt;Helper Text&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                     </div>
                     <div class="tabs__content-css">
                         <pre><code>
 .tooltip {
-position: relative;
+    position: relative;
 }
 
 .tooltip__trigger {
-cursor: pointer;
-height: 24px;
-width: 24px;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    color: var(--text-primary);
 }
 
 .tooltip_preview {
-margin-top: 50px;
+    margin-top: 50px;
 }
 
 .tooltip__help {
-width: 129px;
-height: 45px;
-background: #4263EB;
-box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-border-radius: 10px;
-position: absolute;
-left: 50%;
-top: -100%;
-transform: translate(-50%, -50%);
-display: none;
+    width: 129px;
+    height: 45px;
+    background: var(--blue);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s linear, transform 0.1s linear;
 }
 
 .tooltip__help_preview {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
 }
 
 .tooltip__text {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: var(--grey-2);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--grey-2);
+    display: none;
+}
+
+.tooltip__text_preview {
+    display: flex;
 }
 
 .tooltip__help::before {
-content: "";
-border: 7px solid transparent;
-border-top: 5px solid #4263EB;
-position: absolute;
-left: 50%;
-transform: translate(-50%);
-top: 100%;
+    content: "";
+    border: 7px solid transparent;
+    border-top: 5px solid var(--blue);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100%;
 }
 
-.tooltip__trigger:hover ~ .tooltip__help {
-display: flex;
-justify-content: center;
-align-items: center;
+.tooltip__trigger:hover~.tooltip__help {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip__trigger:hover~.tooltip__help .tooltip__text {
+    display: flex;
 }
 
 .tooltip_component-page {
-position: relative;
-left: 52px;
-top: 23px;
+    position: relative;
+    left: 52px;
+    top: 23px;
 }
 
 @media all and (max-width: 767px) {
-.tooltip_component-page {
-top: 46px;
+    .tooltip_component-page {
+        top: 46px;
+    }
 }
-}
+
                         </code></pre>
                     </div>
                 </div>

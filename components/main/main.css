@@ -1,5 +1,5 @@
 .main {
-border-bottom: 1px solid var(--grey-2);
-background: var(--main-bg);
-color: var(--font-color);
+    border-bottom: 1px solid var(--grey-2);
+    background: var(--main-bg);
+    color: var(--font-color);
 }

@@ -166,7 +166,7 @@
                     <div class="tabs__content-html">
                         <pre><code>
 &lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;
-&lt;span&gt;Open modal&lt;/span&gt;
+    &lt;span&gt;Open modal&lt;/span&gt;
 &lt;/button&gt;
 &lt;div class=&quot;modalka&quot; id=&quot;modal&quot;&gt;
     &lt;div class=&quot;modalka__background&quot;&gt;&lt;/div&gt;
@@ -176,9 +176,9 @@
             &lt;svg class=&quot;modalka__cross&quot; id=&quot;modal-close&quot;&gt;
                 &lt;use xlink:href=&quot;../../assets/images/sprite.svg#cross&quot;&gt;&lt;/use&gt;
             &lt;/svg&gt; 
-       
+        
         &lt;div class=&quot;modalka__content&quot;&gt;
-            &lt;div class=&quot;input modalka__input&quot;&gt;
+            &lt;div class=&quot;input input_modalka&quot;&gt;
                 &lt;label class=&quot;input__label-as-wrapper&quot;&gt;
                     &lt;div class=&quot;input__label-text&quot;&gt;Name&lt;/div&gt;
                     &lt;div class=&quot;input__field-container&quot;&gt;
@@ -186,7 +186,7 @@
                     &lt;/div&gt;
                 &lt;/label&gt;
             &lt;/div&gt;
-            &lt;div class=&quot;input modalka__input&quot;&gt;
+            &lt;div class=&quot;input input_modalka&quot;&gt;
                 &lt;label class=&quot;input__label-as-wrapper&quot;&gt;
                     &lt;div class=&quot;input__label-text&quot;&gt;Email&lt;/div&gt;
                     &lt;div class=&quot;input__field-container&quot;&gt;
@@ -194,7 +194,7 @@
                     &lt;/div&gt;
                 &lt;/label&gt;
             &lt;/div&gt;
-            &lt;button class=&quot;button button_primary modalka__button&quot;&gt;
+            &lt;button class=&quot;button button_primary button_modalka&quot;&gt;
                 &lt;span&gt;Submit&lt;/span&gt;
             &lt;/button&gt;
         &lt;/div&gt;
@@ -205,106 +205,91 @@
                     <div class="tabs__content-css">
                         <pre><code>
 .modalka {
-width: 100%;
-height: 100%;
-display: none;
-position: fixed;
-top: 0;
-left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .modalka_preview {
-display: block;
-position: relative;
-min-height: 350px;
-min-width: 240px;
+    display: block;
+    position: relative;
+    min-height: 350px;
+    min-width: 240px;
 }
 
 .modalka__background {
-width: 100%;
-height: 100%;
-background: #C4C4C4;
-opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background: var(--grey-4);
+    opacity: 0.5;
 }
 
 .modalka__background_preview {
-position: absolute;
-top: 0;
-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .modalka__area {
-padding: 16px 40px 40px 40px;
-box-sizing: border-box;
-background: var(--white);
-border-radius: 8px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+    padding: 16px 40px 40px 40px;
+    box-sizing: border-box;
+    background: var(--white-bg);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modalka__area_preview {
-position: relative;
-width: 80%;
-height: 80%;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 8px 20px 20px 20px;
+    position: relative;
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 20px 20px 20px;
 }
 
 .modalka__title {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: flex-end;
-color: #334D6E;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: var(--grey-4);
 }
 
 .modalka__content {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: var(--grey-4);
-width: 100%;
-height: 100%;
-min-width: 164px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    width: 100%;
+    height: 100%;
+    min-width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .modalka__cross {
-width: 24px;
-height: 24px;
-position: absolute;
-top: 12px;
-right: 12px;
-cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    color: var(--text-dark);
 }
-
-.modalka__input {
-margin-top: 16px;
-width: 100%;
-}
-
-.modalka__button {
-display: block;
-width: 52%;
-margin-top: 22px;
-}
-
-.modalka__input_preview {
-padding: 8px 0 6px 12px;
-height: 18%;
-}
-
                         </code></pre>
                     </div>
                 </div>

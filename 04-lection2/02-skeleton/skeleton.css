@@ -1,80 +1,79 @@
 .skeleton {
-background: var(--white);
-border: 1px solid var(--grey-3);
-box-sizing: border-box;
-border-radius: 8px;
-padding: 24px 40px 32px 24px;
-width: 100%;
-max-width: 515px;
-min-width: min-content;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+    width: 100%;
+    max-width: 515px;
+    min-width: min-content;
 }
 
 .skeleton__content {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .skeleton__circle {
-width: 64px;
-height: 64px;
-background: var(--grey-2);
-border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background: var(--grey-2);
+    border-radius: 50%;
 }
 
 .skeleton__lines-container {
-display: flex;
-flex-direction: column;
-margin-left: 16px;
-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    width: 50%;
 }
 
 .skeleton__full-lines-container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin-top: 16px;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+    width: 100%;
 }
 
 .skeleton__line-short {
-width: 70%;
-height: 20px;
-margin-top: 8px;
-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    width: 70%;
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__line-mid {
-width: 100%;
-height: 20px;
-margin-top: 8px;
-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__line-long {
-width: 100%;
-height: 20px;
-margin-top: 8px;
-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__circle, .skeleton__line-short, .skeleton__line-mid, .skeleton__line-long {
-animation-duration: 1.5s;
-animation-fill-mode: forwards;
-animation-iteration-count: infinite;
-animation-name: backgroundMovement;
-animation-timing-function: linear;
-background: var(--grey-2);
-background: linear-gradient(267.58deg, var(--grey-2) 0%, var(--grey-1) 80%, var(--grey-2) 100%);
-background-size: 200%;
-display: inline-block;
-/* width: 100%; */
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: backgroundMovement;
+    animation-timing-function: linear;
+    background: var(--grey-2);
+    background: linear-gradient(267.58deg, var(--grey-2) 0%, var(--grey-1) 80%, var(--grey-2) 100%);
+    background-size: 200%;
+    display: inline-block;
+    /* width: 100%; */
 }
 
 @keyframes backgroundMovement {
     0% {
         background-position: 100%;
     }
-
     100% {
         background-position: -100%;
     }

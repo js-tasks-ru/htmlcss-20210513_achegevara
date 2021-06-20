@@ -1,29 +1,29 @@
 .page {
-background: var(--grey-bg);
-display: grid;
-grid-template-rows: auto 1fr auto;
-width: 100%;
-min-width: 220px;
+    background: var(--grey-bg);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    min-width: 220px;
 }
 
 @media all and (max-width:767px) {
-.page {
-height: 100%;
-}
+    .page {
+        height: 100%;
+    }
 }
 
 .page__box {
-max-width: 1110px;
-min-width: 220px;
-padding: 0 16px;
-box-sizing: border-box;
-margin: 0 auto;
-background-color: var(--grey-bg);
-transition: padding 250ms;
+    max-width: 1110px;
+    min-width: 220px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: var(--grey-bg);
+    transition: padding 250ms;
 }
 
 @media all and (min-width:1200px) {
-.page__box {
-padding: 0;
-}
+    .page__box {
+        padding: 0;
+    }
 }
