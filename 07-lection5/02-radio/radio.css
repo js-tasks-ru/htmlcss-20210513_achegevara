@@ -53,10 +53,6 @@
     display: block;
 }
 
-.radio__input:focus~.radio__state .radio__legend {
-    text-decoration: underline;
-}
-
 .radio__input:disabled~.radio__state .radio__control {
     background: var(--text-disabled);
     border: var(--text-disabled);

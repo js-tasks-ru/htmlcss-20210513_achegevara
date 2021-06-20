@@ -55,10 +55,6 @@
     display: block;
 }
 
-.checkbox__input:focus~.checkbox__state .checkbox__legend {
-    text-decoration: underline;
-}
-
 .checkbox__input:disabled~.checkbox__state .checkbox__control {
     background: var(--text-disabled);
     border: var(--text-disabled);

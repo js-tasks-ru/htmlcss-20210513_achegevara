@@ -69,10 +69,6 @@
     left: 75%;
 }
 
-.toggler__input:focus~.toggler__state .toggler__legend {
-    text-decoration: underline;
-}
-
 .toggler__input:disabled~.toggler__state .toggler__control {
     background: var(--text-disabled);
     border: var(--text-disabled);
