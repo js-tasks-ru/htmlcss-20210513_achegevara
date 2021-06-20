@@ -1,15 +1,15 @@
 .main {
-display: grid;
-grid-template-columns: auto 1fr;
-column-gap: 56px;
-max-width: 1110px;
-width: 100%;
-justify-self: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 56px;
+    max-width: 1110px;
+    width: 100%;
+    justify-self: center;
 }
 
 @media all and (max-width:767px) {
-.main {
-background: var(--white);
-grid-template-columns: 1fr;
-}
+    .main {
+        background: var(--white);
+        grid-template-columns: 1fr;
+    }
 }

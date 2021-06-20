@@ -1,141 +1,141 @@
 .tabs {
-background: var(--white);
-border-bottom: 1px solid var(--grey-2);
+    background: var(--main-bg);
+    border-bottom: 1px solid var(--grey-2);
 }
 
 .tabs__items-wrapper {
-max-width: 1110px;
-min-width: 220px;
-margin: 0 auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 16px;
-overflow: auto;
+    max-width: 1110px;
+    min-width: 220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    overflow: auto;
 }
 
 .tabs__items-wrapper_component-page {
-margin: 0 48px;
+    margin: 0 48px;
 }
 
 .tabs__content-html, .tabs__content-css {
-padding: 0 48px;
-display: none;
-overflow: auto;
+    color: var(--font-color);
+    padding: 0 48px;
+    display: none;
+    overflow: auto;
 }
 
 @media all and (max-width:767px) {
-.tabs__content-html, .tabs__content-css {
-padding: 0 16px;
-}
+    .tabs__content-html, .tabs__content-css {
+        padding: 0 16px;
+    }
 }
 
 @media all and (max-width:767px) {
-.tabs__items-wrapper::-webkit-scrollbar {
-height: 0px;
-width: 0px;
-background: transparent;
-}
-.tabs__items-wrapper {
-scrollbar-width: none;
-}
+    .tabs__items-wrapper::-webkit-scrollbar {
+        height: 0px;
+        width: 0px;
+        background: transparent;
+    }
+    .tabs__items-wrapper {
+        scrollbar-width: none;
+    }
 }
 
 .tabs__item {
-margin-right:40px;
-cursor: pointer;
+    margin-right: 40px;
+    cursor: pointer;
 }
 
 @media all and (max-width:767px) {
-.tabs__item {
-margin-right: 24px;
-}
+    .tabs__item {
+        margin-right: 24px;
+    }
 }
 
 .tabs__item:last-child {
-margin-right: 0;
+    margin-right: 0;
 }
 
 .tabs__input {
-width: 0;
-height: 0;
-opacity: 0;
-pointer-events: none;
-outline: none;
-position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+    position: absolute;
 }
 
 .tabs__label {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: var(--grey-3);
-white-space: nowrap;
-
-border-bottom: 5px solid var(--white);
-padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    white-space: nowrap;
+    transition: all 250ms;
 }
 
-.tabs__input_all:checked ~ .tabs .tabs__item_all .tabs__label {
-color: var(--black);
-border-bottom: 5px solid var(--black);
+.tabs__label:after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: var(--dark-bg);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin-top: 5px;
 }
 
-.tabs__input_atoms:checked ~ .tabs .tabs__item_atoms .tabs__label {
-color: var(--black);
-border-bottom: 5px solid var(--black);
+.tabs>.tabs__items-wrapper .tabs__label:hover, .tabs>.tabs__items-wrapper .tabs__label:active, .tabs>.tabs__items-wrapper .tabs__label:focus {
+    color: var(--active-text-color);
 }
 
-.tabs__input_molecules:checked ~ .tabs .tabs__item_molecules .tabs__label {
-color: var(--black);
-border-bottom: 5px solid var(--black);
+.tabs__input_all:checked~.preview-flex .card {
+    display: flex;
 }
 
-.tabs__input_organisms:checked ~ .tabs .tabs__item_organisms .tabs__label {
-color: var(--black);
-border-bottom: 5px solid var(--black);
+.tabs__input_atoms:checked~.preview-flex .atom {
+    display: flex;
 }
 
-.tabs__input:focus ~ .tabs .tabs__label {
-text-decoration: underline;
+.tabs__input_molecules:checked~.preview-flex .molecule {
+    display: flex;
 }
 
-.tabs__input_all:checked ~ .preview-flex .card {
-display: flex;
+.tabs__input_organisms:checked~.preview-flex .organism {
+    display: flex;
 }
 
-.tabs__input_atoms:checked ~ .preview-flex .atom {
-display: flex;
+.tabs__input_all:checked~.tabs .tabs__items-wrapper .tabs__item_all .tabs__label:after, .tabs__input_atoms:checked~.tabs .tabs__items-wrapper .tabs__item_atoms .tabs__label:after, .tabs__input_molecules:checked~.tabs .tabs__items-wrapper .tabs__item_molecules .tabs__label:after, .tabs__input_organisms:checked~.tabs .tabs__items-wrapper .tabs__item_organisms .tabs__label:after, .tabs__input_all:hover~.tabs .tabs__items-wrapper .tabs__item_all .tabs__label:after, .tabs__input_atoms:hover~.tabs .tabs__items-wrapper .tabs__item_atoms .tabs__label:after, .tabs__input_molecules:hover~.tabs .tabs__items-wrapper .tabs__item_molecules .tabs__label:after, .tabs__input_organisms:hover~.tabs .tabs__items-wrapper .tabs__item_organisms .tabs__label:after {
+    transform: scaleX(1);
 }
 
-.tabs__input_molecules:checked ~ .preview-flex .molecule {
-display: flex;
+.tabs__input_all:checked~.tabs .tabs__items-wrapper .tabs__item_all .tabs__label, .tabs__input_atoms:checked~.tabs .tabs__items-wrapper .tabs__item_atoms .tabs__label, .tabs__input_molecules:checked~.tabs .tabs__items-wrapper .tabs__item_molecules .tabs__label, .tabs__input_organisms:checked~.tabs .tabs__items-wrapper .tabs__item_organisms .tabs__label {
+    color: var(--active-text-color);
 }
 
-.tabs__input_organisms:checked ~ .preview-flex .organism {
-display: flex;
+.tabs__input_html:checked~.tabs .tabs__item_html .tabs__label {
+    color: var(--active-text-color);
 }
 
-.tabs__input_html:checked ~ .tabs .tabs__item_html .tabs__label {
-color: var(--black);
-border-bottom: 5px solid var(--black);
+.tabs__input_css:checked~.tabs .tabs__item_css .tabs__label {
+    color: var(--active-text-color);
 }
 
-.tabs__input_css:checked ~ .tabs .tabs__item_css .tabs__label {
-color: var(--black);
-border-bottom: 5px solid var(--black);
+.tabs__input_html:checked~.tabs .tabs__items-wrapper .tabs__item_html .tabs__label:after, .tabs__input_css:checked~.tabs .tabs__items-wrapper .tabs__item_css .tabs__label:after, .tabs__input_html:hover~.tabs .tabs__items-wrapper .tabs__item_html .tabs__label:after, .tabs__input_css:hover~.tabs .tabs__items-wrapper .tabs__item_css .tabs__label:after {
+    transform: scaleX(1);
 }
 
-.tabs__input_html:checked ~ .tabs__content-html {
-display: flex;
+.tabs__input_html:checked~.tabs__content-html {
+    display: flex;
 }
 
-.tabs__input_css:checked ~ .tabs__content-css {
-display: flex;
+.tabs__input_css:checked~.tabs__content-css {
+    display: flex;
 }

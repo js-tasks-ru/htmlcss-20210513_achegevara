@@ -1,77 +1,73 @@
 .input__field-container {
-position: relative;
+    position: relative;
 }
 
 .input__field {
-height: 56px;
-width: 100%;
-background: var(--white);
-border: 1px solid var(--grey-2);
-box-sizing: border-box;
-border-radius: 8px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-color: var(--grey-4);
-line-height: 26px;
-padding: 17px 0 13px 24px;
-outline: none;
-appearance: none;
+    height: 56px;
+    width: 100%;
+    background: var(--white-bg);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--text-dark);
+    line-height: 26px;
+    padding: 17px 0 13px 24px;
+    outline: none;
+    appearance: none;
 }
 
 .input__field::placeholder {
-color: var(--grey-2);
+    color: var(--text-light);
 }
 
 .input__label-text {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 18px;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: var(--grey-3);
-padding-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    padding-bottom: 5px;
 }
 
 .input__field:focus {
-border: 1px solid var(--blue);
-box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
-}
-
-.input__field_success:focus {
-border: 1px solid var(--grey-2);
+    border: 1px solid var(--blue);
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
 }
 
 .input__icon {
-width: 24px;
-height: 24px;
-position: absolute;
-top: 16px;
-right: 16px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 .input__icon_success {
-color: var(--blue);
+    color: var(--blue);
 }
 
 .input__icon_error {
-color: var(--red);
+    color: var(--red);
 }
 
 .input__field_invalid, .input__field_invalid:focus {
-border: 1px solid var(--red);
-box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
+    border: 1px solid var(--red);
+    box-shadow: 0px 1px 1px rgba(240, 61, 62, 0.1);
 }
 
 .input_modalka {
-margin-top: 16px;
-width: 100%;
+    margin-top: 16px;
+    width: 100%;
 }
 
 .input__field_modalka {
-padding: 8px 0 6px 12px;
-height: 18%;
+    padding: 8px 0 6px 12px;
+    height: 18%;
 }

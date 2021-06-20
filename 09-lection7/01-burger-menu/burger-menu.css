@@ -1,115 +1,131 @@
 .burger-menu {
-position: fixed;
-bottom: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-padding: 0 16px;
-box-sizing: border-box;
-background: var(--grey-1);
-transform: translateX(-100vw);
-transition: transform 200ms ease-in-out;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 16px;
+    box-sizing: border-box;
+    background: var(--grey-bg);
+    transform: translateX(-100vw);
+    transition: transform 200ms ease-in-out;
+    z-index: 3;
 }
 
 .burger-menu[data-open] {
-transform: translateX(0); 
+    transform: translateX(0);
 }
 
 .burger-menu__header {
-width: 100%;
-height: 64px;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .burger-menu__button {
-height: 24px;
-width: 24px;
-position: fixed;
-top: 0;
-left: 0;
+    height: 24px;
+    width: 24px;
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: var(--active-text-color);
+}
+
+@media all and (min-width:767px) {
+    .burger-menu__button {
+        display: none;
+    }
 }
 
 .burger-menu__button-bg {
-width: 32px;
-height: 32px;
-background: var(--grey-2);
-box-sizing: border-box;
-border-radius: 50%;
-display: inline-flex;
-position: absolute;
-left: 0;
-top: 50%;
-transform: translate(0, -50%);
-cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
 }
 
 .burger-menu__close-button {
-position: relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 24px;
+    width: 24px;
+    display: inline-flex;
+    cursor: pointer;
+    color: var(--grey-4);
 }
 
 .burger-menu__switcher {
-border-top: 1px solid var(--grey-2);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 24px 0;
-box-sizing: border-box;
+    border-top: 1px solid var(--grey-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    box-sizing: border-box;
 }
 
 .burger-menu__switcher-text {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: var(--grey-4);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
 }
 
 .burger-menu__menu-wrapper {
-border-top: 1px solid var(--grey-2);
+    border-top: 1px solid var(--grey-2);
 }
 
 .burger-menu__menu-title {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 26px;
-color: var(--grey-3);
-margin-top: 24px;
-margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3);
+    margin-top: 24px;
+    margin-bottom: 8px;
 }
 
 .burger-menu__menu-item {
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: var(--black);
-margin: 8px 0px;
-text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--font-color);
+    margin: 8px 0px;
+    text-decoration: none;
 }
 
 .burger-menu__menu-link {
-margin-top: 64px;
+    margin-top: 64px;
 }
 
 .burger-menu__menu {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .burger-menu__menu-item_active {
-color: var(--red);
+    color: var(--red);
 }
 
 .burger-menu__menu-item:hover {
-opacity: 0.8;
+    opacity: 0.8;
 }
