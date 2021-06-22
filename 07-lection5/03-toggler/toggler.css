@@ -29,8 +29,8 @@
 }
 
 .toggler__control-inner {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     background: var(--grey-2);
     border-radius: 16px;
     position: absolute;

@@ -15,7 +15,13 @@
 }
 
 .tabs__items-wrapper_component-page {
-    margin: 0 48px;
+    margin: 0 32px;
+}
+
+@media all and (max-width:767px) {
+    .tabs__items-wrapper_component-page {
+        margin: 0;
+    }
 }
 
 .tabs__content-html, .tabs__content-css {

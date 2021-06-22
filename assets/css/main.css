@@ -66,3 +66,9 @@ html[data-theme-dark] {
 html[data-theme-dark] .toggler__input:checked ~ .toggler__state .toggler__control-inner {
     background: var(--white);
 }
+
+.preload * {
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition: none !important;
+}
