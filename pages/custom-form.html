@@ -17,8 +17,11 @@
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
     <script>
-        setTimeout(function(){
-            document.body.className="";
+        setTimeout(function() {
+            let temp = document.getElementsByClassName('preload');
+            for(item of temp) {
+                item.classList.remove('preload');
+            }
         }, 500);
     </script>
 </head>
