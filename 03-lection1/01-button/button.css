@@ -61,12 +61,18 @@
 }
 
 .button_preview {
-    width: 30%;
-    margin: 5px;
+    width: auto;
 }
 
 .button_modalka {
     display: block;
     width: 52%;
     margin-top: 22px;
+}
+
+.button-preview-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
 }
