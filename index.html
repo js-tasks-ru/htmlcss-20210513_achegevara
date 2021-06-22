@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
         <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
         <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
         <link rel="stylesheet" href="./07-lection5/04-input/input.css">
@@ -465,13 +466,40 @@
                             </a>
                             <a href="#" class="preview-flex__card card atom">
                                 <div class="card__content">
-                                    <div class="tooltip tooltip_preview">
-                                        <svg class="tooltip__trigger">
-                                            <use xlink:href="./assets/images/sprite.svg#questionmark"></use>
-                                        </svg>   
-                                        <div class="tooltip__help tooltip__help_preview">
-                                            <div class="tooltip__text tooltip__text_preview">Helper Text</div>
-                                        </div>
+                                    <div class="accordion">
+                                        <details class="accordion__item" open>
+                                            <summary class="accordion__summary">
+                                                Summary
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                                Content here
+                                            </p>
+                                        </details>
+                                        
+                                        <details class="accordion__item">
+                                            <summary class="accordion__summary">
+                                                Summary
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                            </p>
+                                        </details>
+                                        
+                                        <details class="accordion__item">
+                                            <summary class="accordion__summary">
+                                                Summary
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                            </p>
+                                        </details>
                                     </div>
                                 </div>
                                 <div class="card__legend">
