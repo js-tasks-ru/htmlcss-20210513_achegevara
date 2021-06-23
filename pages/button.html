@@ -4,28 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom form elements</title>
+    <title>Component page</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../components/template/template.css">
     <link rel="stylesheet" href="../components/tabs/tabs.css">
-    <link rel="stylesheet" href="../07-lection5/01-checkbox/checkbox.css">
-    <link rel="stylesheet" href="../07-lection5/02-radio/radio.css">
-    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
-    <link rel="stylesheet" href="../07-lection5/04-input/input.css">
+    <link rel="stylesheet" href="../03-lection1/01-button/button.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link href="../assets/css/rainbow.css" rel="stylesheet" type="text/css">
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
-    <script>
-        setTimeout(function() {
-            let temp = document.getElementsByClassName('preload');
-            for(item of temp) {
-                item.classList.remove('preload');
-            }
-        }, 500);
-    </script>
 </head>
-<body class="preload">
+<body>
     <div class="page">
         <header class="header header_template">
             <div class="header__container page__box">
@@ -40,9 +30,9 @@
                             </svg>
                         </div>
                         <svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="1" width="30" height="30" fill="currentColor"/>
-                            <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
-                            <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                            <rect y="1" width="30" height="30" fill="#212429"/>
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
                         </svg>
                     </div>
                     <div class="burger-menu__body">
@@ -64,13 +54,13 @@
                             <div class="burger-menu__menu-title">Components</div>
                             <nav class="burger-menu__menu">
                                 <a href="./tooltip.html" class="burger-menu__menu-item">Tooltip</a>
-                                <a href="./custom-form.html" class="burger-menu__menu-item burger-menu__menu-item_active">Custom form elements</a>
+                                <a href="./custom-form.html" class="burger-menu__menu-item">Custom form elements</a>
                                 <a href="./calendar.html" class="burger-menu__menu-item">Calendar</a>
                                 <a href="./modal.html" class="burger-menu__menu-item">Modal dialog</a>
                                 <a href="./histogram.html" class="burger-menu__menu-item">Histogram</a>
                                 <a href="./avatar.html" class="burger-menu__menu-item">Avatar</a>
                                 <a href="./accordion.html" class="burger-menu__menu-item">Accordion</a>
-                                <a href="./button.html" class="burger-menu__menu-item">Button</a>
+                                <a href="./button.html" class="burger-menu__menu-item burger-menu__menu-item_active">Button</a>
                                 <a href="./skeleton.html" class="burger-menu__menu-item">Skeleton</a>
                                 <a href="../index.html" class="burger-menu__menu-item burger-menu__menu-link">Main page</a>
                             </nav>
@@ -79,9 +69,9 @@
                 </div>
                 <a href="../index.html" class="header__logo header__logo_template">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1" width="30" height="30" fill="#212429"/>
-                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                        <rect y="1" width="30" height="30" fill="currentColor"/>
+                        <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+                        <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
                     </svg>    
                 </a>
                 <div class="mode-switcher">
@@ -115,181 +105,168 @@
                 <div class="menu__header">Components</div>
                 <nav class="menu__body">
                     <a href="./tooltip.html" class="menu__item">Tooltip</a>
-                    <a href="./custom-form.html" class="menu__item menu__item_active">Custom form elements</a>
+                    <a href="./custom-form.html" class="menu__item">Custom form elements</a>
                     <a href="./calendar.html" class="menu__item">Calendar</a>
                     <a href="./modal.html" class="menu__item">Modal dialog</a>
                     <a href="./histogram.html" class="menu__item">Histogram</a>
                     <a href="./avatar.html" class="menu__item">Avatar</a>
                     <a href="./accordion.html" class="menu__item">Accordion</a>
-                    <a href="./button.html" class="menu__item">Button</a>
+                    <a href="./button.html" class="menu__item menu__item_active">Button</a>
                     <a href="./skeleton.html" class="menu__item">Skeleton</a>
                 </nav>
             </div>
             <div class="component">
-                <div class="component__title">Custom form elements</div>
+                <div class="component__title">Button</div>
                 <div class="component__body">
-                    <div class="component__inner-wrapper">
-                        <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input">
-                            <div class="checkbox__state">
-                                <div class="checkbox__control">
-                                    <svg class="checkbox__icon">
-                                        <use xlink:href="../assets/images/sprite.svg#check"></use>
-                                    </svg>
-                                </div>
-                                <div class="checkbox__legend">
-                                    Default
-                                </div>
-                            </div>
-                        </label>
+                    <div class="button-preview-container">
+                        <button class="button button_primary button_preview">
+                            <span>Primary</span>
+                        </button>
+                        <button class="button button_secondary button_preview">
+                            <span>Secondary</span>
+                        </button>
+                        <button class="button button_alternate button_preview">
+                            <span>Alternate</span>
+                        </button>
                 
-                        <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input" checked>
-                            <div class="checkbox__state">
-                                <div class="checkbox__control">
-                                    <svg class="checkbox__icon">
-                                        <use xlink:href="../assets/images/sprite.svg#check"></use>
-                                    </svg>
-                                </div>
-                                <div class="checkbox__legend">
-                                    Checked
-                                </div>
-                            </div>
-                        </label>
                 
-                        <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input" disabled>
-                            <div class="checkbox__state">
-                                <div class="checkbox__control">
-                                    <svg class="checkbox__icon">
-                                        <use xlink:href="../assets/images/sprite.svg#check"></use>
-                                    </svg>
-                                </div>
-                                <div class="checkbox__legend">
-                                    Disabled
-                                </div>
-                            </div>
-                        </label>
+                        <button class="button button_primary button_disabled button_preview">
+                            <span>Primary</span>
+                        </button>
+                        <button class="button button_secondary button_disabled button_preview">
+                            <span>Secondary</span>
+                        </button>
+                        <button class="button button_alternate button_alternate_disabled button_preview">
+                            <span>Alternate</span>
+                        </button>
                     </div>
-                    <div class="component__inner-wrapper">
-                        <label class="radio">
-                            <input type="radio" name="radio-test" class="radio__input">
-                            <div class="radio__state">
-                                <div class="radio__control">
-                                    <div class="radio__icon">
-                                    </div>
-                                    
-                                </div>
-                                <div class="radio__legend">
-                                    Default
-                                </div>
-                            </div>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="radio-test" class="radio__input" checked>
-                            <div class="radio__state">
-                                <div class="radio__control">
-                                    <div class="radio__icon">
-                                </div>
-                                </div>
-                                <div class="radio__legend">
-                                    Checked
-                                </div>
-                            </div>
-                        </label>
-                
-                        <label class="radio">
-                            <input type="radio" class="radio__input" disabled>
-                            <div class="radio__state">
-                                <div class="radio__control">
-                                    <div class="radio__icon">
-                                </div>
-                                </div>
-                                <div class="radio__legend">
-                                    Disabled
-                                </div>
-                            </div>
-                        </label>
+                </div>
+                <div class="component__code">
+                    <input type="radio" id="html-tab" name="tabs" class="tabs__input tabs__input_html" checked>
+                    <input type="radio" id="css-tab" name="tabs" class="tabs__input tabs__input_css">
+
+                    <nav class="tabs">
+                        <div class="tabs__items-wrapper tabs__items-wrapper_component-page">
+                            <label for="html-tab" class="tabs__item tabs__item_html">
+                                <div class="tabs__label">HTML</div>
+                            </label>
+                            <label for="css-tab" class="tabs__item tabs__item_css">
+                                <div class="tabs__label">CSS</div>
+                            </label>
+                        </div>
+                    </nav>
+                    <div class="tabs__content-html">
+                        <pre><code data-language="html">
+&lt;button class=&quot;button button_primary button_preview&quot;&gt;
+    &lt;span&gt;Primary&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button button_secondary button_preview&quot;&gt;
+    &lt;span&gt;Secondary&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button button_alternate button_preview&quot;&gt;
+    &lt;span&gt;Alternate&lt;/span&gt;
+&lt;/button&gt;
+
+
+&lt;button class=&quot;button button_primary button_disabled button_preview&quot;&gt;
+    &lt;span&gt;Primary&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button button_secondary button_disabled button_preview&quot;&gt;
+    &lt;span&gt;Secondary&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;button button_alternate button_alternate_disabled button_preview&quot;&gt;
+    &lt;span&gt;Alternate&lt;/span&gt;
+&lt;/button&gt;
+                        </code></pre>
                     </div>
-                    <div class="component__inner-wrapper">
-                        <label class="toggler">
-                            <input type="checkbox" class="toggler__input">
-                            <div class="toggler__state">
-                                <div class="toggler__control">
-                                    <div class="toggler__control-inner"></div>
-                                </div>
-                                <div class="toggler__legend"></div>
-                            </div>
-                        </label>
-                
-                        <label class="toggler">
-                            <input type="checkbox" class="toggler__input" checked>
-                            <div class="toggler__state">
-                                <div class="toggler__control">
-                                        <div class="toggler__control-inner"></div>
-                                </div>
-                                <div class="toggler__legend"></div>
-                            </div>
-                        </label>
-                
-                        <label class="toggler">
-                            <input type="checkbox" class="toggler__input" disabled>
-                            <div class="toggler__state">
-                                <div class="toggler__control">
-                                        <div class="toggler__control-inner"></div>
-                                </div>
-                                <div class="toggler__legend"></div>
-                            </div>
-                        </label>
-                    </div>
-                
-                    <div class="component__inner-wrapper">
-                        <div class="input">
-                            <label class="input__label-as-wrapper">
-                                <div class="input__label-text">Label</div>
-                                <div class="input__field-container">
-                                    <input type="text" class="input__field" placeholder="Placeholder">
-                                </div>
-                            </label>
-                        </div>
-                
-                        <div class="input">
-                            <label class="input__label-as-wrapper">
-                                <div class="input__label-text">Focus</div>
-                                <div class="input__field-container">
-                                    <input autofocus type="text" class="input__field" placeholder="Filled Input" value="Filled Input">
-                                </div>
-                            </label>
-                        </div>
-                
-                        <div class="input">
-                            <label class="input__label-as-wrapper">
-                                <div class="input__label-text">Success</div>
-                                <div class="input__field-container">
-                                    <input type="text" class="input__field input__field_success" placeholder="Success" value="Success">
-                                    <svg class="input__icon input__icon_success">
-                                        <use xlink:href="../assets/images/sprite.svg#success"></use>
-                                    </svg>
-                                </div>
-                            </label>
-                        </div>
-                
-                        <div class="input">
-                            <label class="input__label-as-wrapper">
-                                <div class="input__label-text">Error</div>
-                                <div class="input__field-container">
-                                    <input type="text" class="input__field input__field_invalid" placeholder="Error" value="Error">
-                                    <svg class="input__icon input__icon_error">
-                                        <use xlink:href="../assets/images/sprite.svg#error"></use>
-                                    </svg>
-                                </div>
-                            </label>
-                        </div>
+                    <div class="tabs__content-css">
+                        <pre><code data-language="css">
+.button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+}
+
+.button_primary {
+    width: 189px;
+    height: 48px;
+    background: var(--blue);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_secondary {
+    width: 189px;
+    height: 48px;
+    background: var(--purple);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_alternate {
+    width: 189px;
+    height: 48px;
+    background: var(--white-bg);
+    color: var(--text-dark);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    transition: opacity 200ms ease-in-out, border-color 200ms ease-in-out;
+}
+
+.button_disabled {
+    opacity: 0.5;
+}
+
+.button_alternate_disabled {
+    opacity: 0.3;
+}
+
+.button_primary:hover:not(.button_disabled), .button_primary:active:not(.button_disabled), .button_primary:focus:not(.button_disabled) {
+    background: #2342C0;
+    cursor: pointer;
+}
+
+.button_secondary:hover:not(.button_disabled), .button_secondary:active:not(.button_disabled), .button_secondary:focus:not(.button_disabled) {
+    background: #5028C6;
+    cursor: pointer;
+}
+
+.button_alternate:hover:not(.button_alternate_disabled), .button_alternate:active:not(.button_alternate_disabled), .button_alternate:focus:not(.button_alternate_disabled) {
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button_preview {
+    width: auto;
+    min-width: 80px;
+    font-size: 15px;
+}
+
+.button_modalka {
+    display: block;
+    width: 52%;
+    margin-top: 22px;
+}
+
+.button-preview-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}                            
+                        </code></pre>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">Reusable component library</div>
     </div>
+    <script src="../assets/css/rainbow.js"></script>
 </body>
 </html>
