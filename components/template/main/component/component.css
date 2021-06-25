@@ -49,6 +49,16 @@
     }
 }
 
+.component__body_custom-form {
+    flex-direction: column;
+}
+
+.component__checks-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .component__inner-wrapper {
     display: flex;
     flex-direction: column;

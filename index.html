@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
         <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
         <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
         <link rel="stylesheet" href="./07-lection5/04-input/input.css">
@@ -26,6 +27,7 @@
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
         <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
         <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
         <link rel="stylesheet" href="./09-lection7/01-burger-menu/burger-menu.css">
         <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
         <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
@@ -82,6 +84,9 @@
                                     <a href="./pages/modal.html" class="burger-menu__menu-item">Modal dialog</a>
                                     <a href="./pages/histogram.html" class="burger-menu__menu-item">Histogram</a>
                                     <a href="./pages/avatar.html" class="burger-menu__menu-item">Avatar</a>
+                                    <a href="./pages/accordion.html" class="burger-menu__menu-item">Accordion</a>
+                                    <a href="./pages/button.html" class="burger-menu__menu-item">Button</a>
+                                    <a href="./pages/skeleton.html" class="burger-menu__menu-item">Skeleton</a>
                                     <a href="./index.html" class="burger-menu__menu-item burger-menu__menu-link burger-menu__menu-item_active">Main page</a>
                                 </nav>
                             </div>
@@ -150,20 +155,51 @@
                 <div class="preview-flex">
                     <div class="page__box">
                         <div class="preview-flex__container">
-                            <a href="./pages/tooltip.html" class="preview-flex__card card atom">
+                            <a href="./pages/histogram.html" class="preview-flex__card card organism">
                                 <div class="card__content">
-                                    <div class="tooltip tooltip_preview">
-                                        <svg class="tooltip__trigger">
-                                            <use xlink:href="./assets/images/sprite.svg#questionmark"></use>
-                                        </svg>   
-                                    <div class="tooltip__help tooltip__help_preview">
-                                        <div class="tooltip__text tooltip__text_preview">Helper Text</div>
+                                    <div class="histogram">
+                                        <div class="histogram__header">
+                                            <p class="histogram__title">Total orders</p>
+                                            <div href="#" class="histogram__link">View all</div>
+                                        </div>
+                                        <div class="histogram__total">50399</div>
+                                        <div class="histogram__bars">
+                                            <div class="histogram__bar" style="height: 10%;"></div>
+                                            <div class="histogram__bar" style="height: 30%;"></div>
+                                            <div class="histogram__bar" style="height: 20%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 40%;"></div>
+                                            <div class="histogram__bar" style="height: 100%;"></div>
+                                            <div class="histogram__bar" style="height: 80%;"></div>
+                                            <div class="histogram__bar" style="height: 60%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 30%;"></div>
+                                            <div class="histogram__bar" style="height: 40%;"></div>
+                                            <div class="histogram__bar" style="height: 60%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 85%;"></div>
+                                            <div class="histogram__bar" style="height: 45%;"></div>
+                                            <div class="histogram__bar" style="height: 20%;"></div>
+                                            <div class="histogram__bar" style="height: 35%;"></div>
+                                            <div class="histogram__bar" style="height: 50%;"></div>
+                                            <div class="histogram__bar" style="height: 15%;"></div>
+                                            <div class="histogram__bar" style="height: 10%;"></div>
+                                            <div class="histogram__bar" style="height: 30%;"></div>
+                                            <div class="histogram__bar" style="height: 45%;"></div>
+                                            <div class="histogram__bar" style="height: 65%;"></div>
+                                            <div class="histogram__bar" style="height: 70%;"></div>
+                                            <div class="histogram__bar" style="height: 90%;"></div>
+                                            <div class="histogram__bar" style="height: 45%;"></div>
+                                            <div class="histogram__bar" style="height: 80%;"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
                                 <div class="card__legend">
-                                    <div class="card__title">Tooltip</div>
-                                    <div class="card__subtitle">Atom</div>
+                                    <div class="card__title">Histogram</div>
+                                    <div class="card__subtitle">Organism</div>
                                 </div>
                             </a>
                             <a href="./pages/custom-form.html" class="preview-flex__card card molecule preload">
@@ -257,6 +293,65 @@
                                     <div class="card__subtitle">Molecule</div>
                                 </div>
                             </a>
+                            <a href="./pages/skeleton.html" class="preview-flex__card card molecule">
+                                <div class="card__content">
+                                    <div class="skeleton">
+                                        <div class="skeleton__content">
+                                            <div class="skeleton__circle"></div>
+                                            <div class="skeleton__lines-container">
+                                                <div class="skeleton__line-short"></div>
+                                                <div class="skeleton__line-mid"></div>
+                                            </div>
+                                            <div class="skeleton__full-lines-container">
+                                                <div class="skeleton__line-long"></div>
+                                                <div class="skeleton__line-long"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Skeleton</div>
+                                    <div class="card__subtitle">Molecule</div>
+                                </div>
+                            </a>
+                            <a href="./pages/modal.html" class="preview-flex__card card organism">
+                                <div class="card__content">
+                                    <div class="modalka modalka_preview" id="modal">
+                                        <div class="modalka__background modalka__background_preview"></div>
+                                        <div class="modalka__area modalka__area_preview">
+                                                <div class="modalka__title"></div>
+                                                <svg class="modalka__cross" id="modal-close">
+                                                    <use xlink:href="./assets/images/sprite.svg#cross"></use>
+                                                </svg> 
+                                            <div class="modalka__content">
+                                                <div class="input input_modalka">
+                                                    <label class="input__label-as-wrapper">
+                                                        <div class="input__label-text">Name</div>
+                                                        <div class="input__field-container">
+                                                            <input type="text" class="input__field input__field_modalka" placeholder="Placeholder">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="input input_modalka">
+                                                    <label class="input__label-as-wrapper">
+                                                        <div class="input__label-text">Email</div>
+                                                        <div class="input__field-container">
+                                                            <input type="text" class="input__field input__field_modalka" placeholder="Placeholder">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <button class="button button_primary button_modalka">
+                                                    <span>Submit</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Modal dialog</div>
+                                    <div class="card__subtitle">Organism</div>
+                                </div>
+                            </a>
                             <a href="./pages/calendar.html" class="preview-flex__card card molecule">
                                 <div class="card__content">
                                     <div class="calendar calendar_preview">
@@ -315,89 +410,80 @@
                                     <div class="card__subtitle">Molecule</div>
                                 </div>
                             </a>
-                            <a href="./pages/modal.html" class="preview-flex__card card organism">
+                            <a href="./pages/accordion.html" class="preview-flex__card card organism">
                                 <div class="card__content">
-                                    <div class="modalka modalka_preview" id="modal">
-                                        <div class="modalka__background modalka__background_preview"></div>
-                                        <div class="modalka__area modalka__area_preview">
-                                                <div class="modalka__title"></div>
-                                                <svg class="modalka__cross" id="modal-close">
-                                                    <use xlink:href="./assets/images/sprite.svg#cross"></use>
-                                                </svg> 
-                                            <div class="modalka__content">
-                                                <div class="input input_modalka">
-                                                    <label class="input__label-as-wrapper">
-                                                        <div class="input__label-text">Name</div>
-                                                        <div class="input__field-container">
-                                                            <input type="text" class="input__field input__field_modalka" placeholder="Placeholder">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div class="input input_modalka">
-                                                    <label class="input__label-as-wrapper">
-                                                        <div class="input__label-text">Email</div>
-                                                        <div class="input__field-container">
-                                                            <input type="text" class="input__field input__field_modalka" placeholder="Placeholder">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <button class="button button_primary button_modalka">
-                                                    <span>Submit</span>
-                                                </button>
-                                            </div>
-                                        </div>
+                                    <div class="accordion">
+                                        <details class="accordion__item" open>
+                                            <summary class="accordion__summary">
+                                                Summary
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                                Content here
+                                            </p>
+                                        </details>
+                                        
+                                        <details class="accordion__item">
+                                            <summary class="accordion__summary">
+                                                Summary
+                                                <svg class="accordion__arrow">
+                                                    <use xlink:href="./assets/images/sprite.svg#arrow"></use>
+                                                </svg>
+                                            </summary>
+                                            <p class="accordion__content">
+                                            </p>
+                                        </details>
                                     </div>
                                 </div>
                                 <div class="card__legend">
-                                    <div class="card__title">Modal dialog</div>
+                                    <div class="card__title">Accordion</div>
                                     <div class="card__subtitle">Organism</div>
                                 </div>
                             </a>
-                            <a href="./pages/histogram.html" class="preview-flex__card card organism">
+                            <a href="./pages/tooltip.html" class="preview-flex__card card atom">
                                 <div class="card__content">
-                                    <div class="histogram">
-                                        <div class="histogram__header">
-                                            <p class="histogram__title">Total orders</p>
-                                            <div href="#" class="histogram__link">View all</div>
-                                        </div>
-                                        <div class="histogram__total">50399</div>
-                                        <div class="histogram__bars">
-                                            <div class="histogram__bar" style="height: 10%;"></div>
-                                            <div class="histogram__bar" style="height: 30%;"></div>
-                                            <div class="histogram__bar" style="height: 20%;"></div>
-                                            <div class="histogram__bar" style="height: 50%;"></div>
-                                            <div class="histogram__bar" style="height: 40%;"></div>
-                                            <div class="histogram__bar" style="height: 100%;"></div>
-                                            <div class="histogram__bar" style="height: 80%;"></div>
-                                            <div class="histogram__bar" style="height: 60%;"></div>
-                                            <div class="histogram__bar" style="height: 70%;"></div>
-                                            <div class="histogram__bar" style="height: 50%;"></div>
-                                            <div class="histogram__bar" style="height: 50%;"></div>
-                                            <div class="histogram__bar" style="height: 70%;"></div>
-                                            <div class="histogram__bar" style="height: 30%;"></div>
-                                            <div class="histogram__bar" style="height: 40%;"></div>
-                                            <div class="histogram__bar" style="height: 60%;"></div>
-                                            <div class="histogram__bar" style="height: 70%;"></div>
-                                            <div class="histogram__bar" style="height: 85%;"></div>
-                                            <div class="histogram__bar" style="height: 45%;"></div>
-                                            <div class="histogram__bar" style="height: 20%;"></div>
-                                            <div class="histogram__bar" style="height: 35%;"></div>
-                                            <div class="histogram__bar" style="height: 50%;"></div>
-                                            <div class="histogram__bar" style="height: 15%;"></div>
-                                            <div class="histogram__bar" style="height: 10%;"></div>
-                                            <div class="histogram__bar" style="height: 30%;"></div>
-                                            <div class="histogram__bar" style="height: 45%;"></div>
-                                            <div class="histogram__bar" style="height: 65%;"></div>
-                                            <div class="histogram__bar" style="height: 70%;"></div>
-                                            <div class="histogram__bar" style="height: 90%;"></div>
-                                            <div class="histogram__bar" style="height: 45%;"></div>
-                                            <div class="histogram__bar" style="height: 80%;"></div>
+                                    <div class="tooltip tooltip_preview">
+                                        <svg class="tooltip__trigger">
+                                            <use xlink:href="./assets/images/sprite.svg#questionmark"></use>
+                                        </svg>   
+                                        <div class="tooltip__help tooltip__help_preview">
+                                            <div class="tooltip__text tooltip__text_preview">Helper Text</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card__legend">
-                                    <div class="card__title">Histogram</div>
-                                    <div class="card__subtitle">Organism</div>
+                                    <div class="card__title">Tooltip</div>
+                                    <div class="card__subtitle">Atom</div>
+                                </div>
+                            </a>
+                            <a href="./pages/button.html" class="preview-flex__card card atom">
+                                <div class="card__content">
+                                    <div class="card__button-preview-container">
+                                        <button class="button button_preview button_primary">
+                                            <span>Primary</span>
+                                        </button>
+                                        <button class="button button_preview button_secondary">
+                                            <span>Secondary</span>
+                                        </button>
+                                        <button class="button button_preview button_alternate">
+                                            <span>Alternate</span>
+                                        </button>
+                                        <button class="button button_preview button_primary button_disabled">
+                                            <span>Primary</span>
+                                        </button>
+                                        <button class="button button_preview button_secondary button_disabled">
+                                            <span>Secondary</span>
+                                        </button>
+                                        <button class="button button_preview button_alternate button_alternate_disabled">
+                                            <span>Alternate</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card__legend">
+                                    <div class="card__title">Button</div>
+                                    <div class="card__subtitle">Atom</div>
                                 </div>
                             </a>
                             <a href="./pages/avatar.html" class="preview-flex__card card atom">
@@ -414,7 +500,6 @@
                                 </div>
                             </a>
                         </div>
-
                     </div>
                 </div>
             </main>

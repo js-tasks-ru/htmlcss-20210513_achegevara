@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
+    <title>Component page</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../components/template/template.css">
     <link rel="stylesheet" href="../components/tabs/tabs.css">
-    <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css">
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../04-lection2/02-skeleton/skeleton.css">
     <link href="../assets/css/rainbow.css" rel="stylesheet" type="text/css">
     <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
@@ -30,9 +30,9 @@
                             </svg>
                         </div>
                         <svg class="burger-menu__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="1" width="30" height="30" fill="currentColor"/>
-                            <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
-                            <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                            <rect y="1" width="30" height="30" fill="#212429"/>
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
                         </svg>
                     </div>
                     <div class="burger-menu__body">
@@ -55,13 +55,13 @@
                             <nav class="burger-menu__menu">
                                 <a href="./tooltip.html" class="burger-menu__menu-item">Tooltip</a>
                                 <a href="./custom-form.html" class="burger-menu__menu-item">Custom form elements</a>
-                                <a href="./calendar.html" class="burger-menu__menu-item burger-menu__menu-item_active">Calendar</a>
+                                <a href="./calendar.html" class="burger-menu__menu-item">Calendar</a>
                                 <a href="./modal.html" class="burger-menu__menu-item">Modal dialog</a>
                                 <a href="./histogram.html" class="burger-menu__menu-item">Histogram</a>
                                 <a href="./avatar.html" class="burger-menu__menu-item">Avatar</a>
                                 <a href="./accordion.html" class="burger-menu__menu-item">Accordion</a>
                                 <a href="./button.html" class="burger-menu__menu-item">Button</a>
-                                <a href="./skeleton.html" class="burger-menu__menu-item">Skeleton</a>
+                                <a href="./skeleton.html" class="burger-menu__menu-item burger-menu__menu-item_active">Skeleton</a>
                                 <a href="../index.html" class="burger-menu__menu-item burger-menu__menu-link">Main page</a>
                             </nav>
                         </div>
@@ -69,9 +69,9 @@
                 </div>
                 <a href="../index.html" class="header__logo header__logo_template">
                     <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1" width="30" height="30" fill="#212429"/>
-                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                        <rect y="1" width="30" height="30" fill="currentColor"/>
+                        <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+                        <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
                     </svg>    
                 </a>
                 <div class="mode-switcher">
@@ -106,65 +106,28 @@
                 <nav class="menu__body">
                     <a href="./tooltip.html" class="menu__item">Tooltip</a>
                     <a href="./custom-form.html" class="menu__item">Custom form elements</a>
-                    <a href="./calendar.html" class="menu__item menu__item_active">Calendar</a>
+                    <a href="./calendar.html" class="menu__item">Calendar</a>
                     <a href="./modal.html" class="menu__item">Modal dialog</a>
                     <a href="./histogram.html" class="menu__item">Histogram</a>
                     <a href="./avatar.html" class="menu__item">Avatar</a>
                     <a href="./accordion.html" class="menu__item">Accordion</a>
                     <a href="./button.html" class="menu__item">Button</a>
-                    <a href="./skeleton.html" class="menu__item">Skeleton</a>
+                    <a href="./skeleton.html" class="menu__item menu__item_active">Skeleton</a>
                 </nav>
             </div>
             <div class="component">
-                <div class="component__title">Calendar</div>
+                <div class="component__title">Skeleton</div>
                 <div class="component__body">
-                    <div class="calendar">
-                        <div class="calendar__title">October 2019</div>
-                        <div class="calendar__wrapper">
-                            <div class="calendar__inner">
-                                <span class="calendar__item calendar__item_day">Mon</span>
-                                <span class="calendar__item calendar__item_day">Tue</span>
-                                <span class="calendar__item calendar__item_day">Wed</span>
-                                <span class="calendar__item calendar__item_day">Thu</span>
-                                <span class="calendar__item calendar__item_day">Fri</span>
-                                <span class="calendar__item calendar__item_day">Sat</span>
-                                <span class="calendar__item calendar__item_day">Sun</span>
-                                <span class="calendar__item"></span>
-                                <span class="calendar__item"></span>
-                                <span class="calendar__item"></span>
-                                <span class="calendar__item"></span>
-                                <span class="calendar__item"></span>
-                                <span class="calendar__item">1</span>
-                                <span class="calendar__item">2</span>
-                                <span class="calendar__item">3</span>
-                                <span class="calendar__item">4</span>
-                                <span class="calendar__item">5</span>
-                                <span class="calendar__item">6</span>
-                                <span class="calendar__item">7</span>
-                                <span class="calendar__item">8</span>
-                                <span class="calendar__item">9</span>
-                                <span class="calendar__item">10</span>
-                                <span class="calendar__item calendar__item_active">11</span>
-                                <span class="calendar__item calendar__item_between-active">12</span>
-                                <span class="calendar__item calendar__item_between-active">13</span>
-                                <span class="calendar__item calendar__item_between-active">14</span>
-                                <span class="calendar__item calendar__item_active">15</span>
-                                <span class="calendar__item">16</span>
-                                <span class="calendar__item">17</span>
-                                <span class="calendar__item">18</span>
-                                <span class="calendar__item">19</span>
-                                <span class="calendar__item">20</span>
-                                <span class="calendar__item">21</span>
-                                <span class="calendar__item">22</span>
-                                <span class="calendar__item">23</span>
-                                <span class="calendar__item">24</span>
-                                <span class="calendar__item">25</span>
-                                <span class="calendar__item">26</span>
-                                <span class="calendar__item">27</span>
-                                <span class="calendar__item">28</span>
-                                <span class="calendar__item">29</span>
-                                <span class="calendar__item">30</span>
-                                <span class="calendar__item">31</span>
+                    <div class="skeleton">
+                        <div class="skeleton__content">
+                            <div class="skeleton__circle"></div>
+                            <div class="skeleton__lines-container">
+                                <div class="skeleton__line-short"></div>
+                                <div class="skeleton__line-mid"></div>
+                            </div>
+                            <div class="skeleton__full-lines-container">
+                                <div class="skeleton__line-long"></div>
+                                <div class="skeleton__line-long"></div>
                             </div>
                         </div>
                     </div>
@@ -175,63 +138,26 @@
 
                     <nav class="tabs">
                         <div class="tabs__items-wrapper tabs__items-wrapper_component-page">
-                        <label for="html-tab" class="tabs__item tabs__item_html">
-                            <div class="tabs__label">HTML</div>
-                        </label>
-                        <label for="css-tab" class="tabs__item tabs__item_css">
-                            <div class="tabs__label">CSS</div>
-                        </label>
-                    </div>
+                            <label for="html-tab" class="tabs__item tabs__item_html">
+                                <div class="tabs__label">HTML</div>
+                            </label>
+                            <label for="css-tab" class="tabs__item tabs__item_css">
+                                <div class="tabs__label">CSS</div>
+                            </label>
+                        </div>
                     </nav>
                     <div class="tabs__content-html">
                         <pre><code data-language="html">
-&lt;div class=&quot;calendar&quot;&gt;
-    &lt;div class=&quot;calendar__title&quot;&gt;October 2019&lt;/div&gt;
-        &lt;div class=&quot;calendar__wrapper&quot;&gt;
-        &lt;div class=&quot;calendar__inner&quot;&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Mon&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Tue&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Wed&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Thu&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Fri&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Sat&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Sun&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;1&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;2&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;3&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;4&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;5&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;6&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;7&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;8&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;9&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;10&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_active&quot;&gt;11&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_between-active&quot;&gt;12&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_between-active&quot;&gt;13&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_between-active&quot;&gt;14&lt;/span&gt;
-            &lt;span class=&quot;calendar__item calendar__item_active&quot;&gt;15&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;16&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;17&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;18&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;19&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;20&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;21&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;22&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;23&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;24&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;25&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;26&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;27&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;28&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;29&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;30&lt;/span&gt;
-            &lt;span class=&quot;calendar__item&quot;&gt;31&lt;/span&gt;
+&lt;div class=&quot;skeleton&quot;&gt;
+    &lt;div class=&quot;skeleton__content&quot;&gt;
+        &lt;div class=&quot;skeleton__circle&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__lines-container&quot;&gt;
+            &lt;div class=&quot;skeleton__line-short&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__line-mid&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;skeleton__full-lines-container&quot;&gt;
+            &lt;div class=&quot;skeleton__line-long&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__line-long&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -239,76 +165,85 @@
                     </div>
                     <div class="tabs__content-css">
                         <pre><code data-language="css">
-.calendar {
+.skeleton {
     background: var(--white-bg);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
+    padding: 24px 40px 32px 24px;
     width: 100%;
-    max-width: 304px;
-    padding: 28px 26px 40px 26px;
-    min-width: 230px;
-    height: 100%;
+    max-width: 515px;
+    min-width: min-content;
 }
 
-.calendar__title {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: var(--input-text-color);
-    padding-bottom: 24px;
-}
-
-.calendar__wrapper {
-    position: relative;
-    padding-bottom: 100%;
-}
-
-.calendar__inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.calendar__item {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--input-text-color);
+.skeleton__content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.calendar__item_day {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: var(--text-secondary);
-    padding-bottom: 24px;
+.skeleton__circle {
+    width: 64px;
+    height: 64px;
+    background: var(--grey-2);
+    border-radius: 50%;
 }
 
-.calendar__item_active {
-    color: var(--white);
-    background: var(--blue);
+.skeleton__lines-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    width: 50%;
 }
 
-.calendar__item_between-active {
-    background: var(--blue);
-    opacity: 0.2;
-    color: var(--text-primary);
+.skeleton__full-lines-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+    width: 100%;
 }
-                            
+
+.skeleton__line-short {
+    width: 70%;
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__line-mid {
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__line-long {
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__circle, .skeleton__line-short, .skeleton__line-mid, .skeleton__line-long {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: backgroundMovement;
+    animation-timing-function: linear;
+    background: var(--text-light);
+    background: linear-gradient(267.58deg, var(--text-disabled) 0%, var(--grey-bg) 80%, var(--text-disabled) 100%);
+    background-size: 200%;
+    display: inline-block;
+}
+
+@keyframes backgroundMovement {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}                            
                         </code></pre>
                     </div>
                 </div>
